@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    
+
+    
+    <title>빅데이터 도메인 학습 | Tuna&#39;s Room</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="bigdata,clustering">
+    
+    <meta name="description" content="수업내용을 내가 이해한대로 받아적은것이라 난잡하다어설프게 한글사이에 영어가 섞여있는건 강사님의 말을 내 뇌피유가 따라가지 못했기 때문관련 프로젝트 진행하기 전에 한번 훑으면 아이디어 등에 도움될듯 해서 남긴다   클러스터링(Clustering)데이터를 유사도에 의해서 K개의 그룹으로 나누는것추천 시스템에서 주로 사용  백화점 고객을 구매 상품에 따라서 클">
+<meta name="keywords" content="bigdata,clustering">
+<meta property="og:type" content="article">
+<meta property="og:title" content="빅데이터 도메인 학습">
+<meta property="og:url" content="http://NobleTuna.github.io/2019/06/25/bigdata/index.html">
+<meta property="og:site_name" content="Tuna&#39;s Room">
+<meta property="og:description" content="수업내용을 내가 이해한대로 받아적은것이라 난잡하다어설프게 한글사이에 영어가 섞여있는건 강사님의 말을 내 뇌피유가 따라가지 못했기 때문관련 프로젝트 진행하기 전에 한번 훑으면 아이디어 등에 도움될듯 해서 남긴다   클러스터링(Clustering)데이터를 유사도에 의해서 K개의 그룹으로 나누는것추천 시스템에서 주로 사용  백화점 고객을 구매 상품에 따라서 클">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://nobletuna.github.io/image/apartmentCloud.JPG">
+<meta property="og:updated_time" content="2019-06-25T14:37:32.888Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="빅데이터 도메인 학습">
+<meta name="twitter:description" content="수업내용을 내가 이해한대로 받아적은것이라 난잡하다어설프게 한글사이에 영어가 섞여있는건 강사님의 말을 내 뇌피유가 따라가지 못했기 때문관련 프로젝트 진행하기 전에 한번 훑으면 아이디어 등에 도움될듯 해서 남긴다   클러스터링(Clustering)데이터를 유사도에 의해서 K개의 그룹으로 나누는것추천 시스템에서 주로 사용  백화점 고객을 구매 상품에 따라서 클">
+<meta name="twitter:image" content="http://nobletuna.github.io/image/apartmentCloud.JPG">
+    
+
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+
+</head>
+</html>
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">개설중...</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Development/">Development</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Development/BigData/">BigData</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Development/Hexo/">Hexo</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Diary/">Diary</a></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/Development/">Development</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Development/BigData/">BigData</a>
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-bigdata" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        빅데이터 도메인 학습
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2019/06/25/bigdata/" class="article-date">
+            <time datetime="2019-06-24T22:09:31.000Z" itemprop="datePublished">2019-06-25</time>
+        </a>
+    </div>
+
+		
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/bigdata/">bigdata</a>, <a class="tag-link" href="/tags/clustering/">clustering</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p><img src="/image/apartmentCloud.JPG" alt="2019-03-30 19:26"></p>
+<p>수업내용을 내가 이해한대로 받아적은것이라 난잡하다<br>어설프게 한글사이에 영어가 섞여있는건 강사님의 말을 내 뇌피유가 따라가지 못했기 때문<br>관련 프로젝트 진행하기 전에 한번 훑으면 아이디어 등에 도움될듯 해서 남긴다</p>
+<hr>
+
+<h3 id="클러스터링-Clustering"><a href="#클러스터링-Clustering" class="headerlink" title="클러스터링(Clustering)"></a>클러스터링(Clustering)</h3><p>데이터를 유사도에 의해서 K개의 그룹으로 나누는것<br>추천 시스템에서 주로 사용</p>
+<ul>
+<li>백화점 고객을 구매 상품에 따라서 클러스터링함</li>
+<li>추천 시스템을 의해 고객의 과거 패턴을 이용해서 클러스터링 함</li>
+<li>Gene 데이터를 유사도에 따라서 클러스터링 함</li>
+<li>텍스트 문서들을 주제에 따라서 클러스터링 함</li>
+<li>Facebook 에서 이미지들을 유사한 이미지들로 클러스터링을 함</li>
+<li>Call center에서 고객과 통화한 내용을 텍스트로 변환 하여 그 내용에 나타나는 단어나 어휘구나 어휘 절을 추출하고 이를 이용하여 각각의 통화내역을 그룹으로 나누어서 회사에 걸러온 상담 내용을 카테고리 별로 나누어 보고 각 카테고리 별로 요약 정보를 만들어냄</li>
+</ul>
+<p>클러스터링을 다 비교해가면서 하기엔 시간이 많이 소모되므로 대부분 근사치를 이용한 클러스터링을 사용한다.</p>
+<hr>
+
+<h3 id="K-Means-Clustering"><a href="#K-Means-Clustering" class="headerlink" title="K-Means Clustering"></a>K-Means Clustering</h3><p>평균점을 계산하여 센터를 계속 찾은 후 (무게중심) 각 센터에 가까운 것들끼리 클러스터링, 반복<br>클러스터링 변화가 없으면 멈춤<br>처음에 랜덤하게 시작하는 파티션에 따라서 결과값이 다르기 때문에 여러번 시도하고 그중에 가장 좋은 것으로 결정</p>
+<p><strong>단점</strong></p>
+<ul>
+<li>클러스터링 사이즈가 잘 맞지 않음(?)</li>
+<li>클러스터가 공 모양으로 나온다</li>
+<li>outliers가 있을 경우 평균점 계산때문에 부정확한 결과가 나옴 -&gt; K-Medoids 알고리즘</li>
+</ul>
+<p>간단하지만 실제로 사용하지 않음</p>
+<hr>
+
+<h3 id="Hierarchical-Clustering-계층-구조"><a href="#Hierarchical-Clustering-계층-구조" class="headerlink" title="Hierarchical Clustering (계층 구조)"></a>Hierarchical Clustering (계층 구조)</h3><p>top-down(하향식), bottom-up(상향식) 방식 두가지가 있음<br>보통 bottom-up 방식 사용</p>
+<p>토너먼트 대진표처럼 가까운것끼리 묶어나감<br>가장 가까운 클러스터 두개를 merge, 클러스터가 k개가 될때까지 반복<br>어떤 distance function을 쓰냐에 따라서 다름</p>
+<p><strong>distance function(각 클러스터간의 거리를 무엇을 기준으로 비교할 것인가)</strong></p>
+<ul>
+<li>single-link : 각각 클러스터링 안에 제일 가까운 데이터 거리를 비교하고 머지</li>
+<li>complete-link : 각각 클러스터링 안에서 제일 먼 데이터를 비교하고 머지, 클러스터 크기는 작게나옴</li>
+<li>average-link : 각 클러스터의 데이터끼리 1:1로 거리를 비교하고 평균을냄</li>
+<li>mean-link : 섞어놓고 전체 모든 점들간 거리 평균을 계산함</li>
+<li>controid-link  : 클러스터링의 센터값과 거리가 제일 가까운것과 머지,센터는 보통 평균을 씀, 여러개이면 랜덤한것을 클러스터링, 중심은 그것들의 센터값으로 비교</li>
+</ul>
+<p><strong>단점</strong></p>
+<ul>
+<li>centroid-link 를 사용하면 k-means와 비슷하게됨 (동그랗게)</li>
+<li>single link를 사용하면 클러스터가 길쭉하게 나옴</li>
+<li>디스턴스 펑션에 따라 아웃라이어를 포함하는 경우도 생김</li>
+<li>속도가 느림(데이터 갯수에 세제곱에 비례함)</li>
+</ul>
+<p><strong>장점</strong></p>
+<ul>
+<li>k-means와 다르게 최대 거리조건을 주면 클러스터 개수를 지정하지 않아도 (카테고리 갯수를 몰라도 ) 결과를 알 수 있음</li>
+</ul>
+<hr>
+
+<h3 id="DBSCAN-Clustering"><a href="#DBSCAN-Clustering" class="headerlink" title="DBSCAN Clustering"></a>DBSCAN Clustering</h3><p>점 하나에서 같은 반지름으로 묶어지는놈들을 계속해서 merge<br>unvisited 한놈을 계속해서 진행하면서 merge. 약간 2차원 BFS같은 느낌<br>반지름과 (eps) 최소 몇개이상 모여야 클러스터로 인정할 것인가에 따라서 결과가 다름</p>
+<hr>
+
+<h3 id="EM-Algorithm-Clustering"><a href="#EM-Algorithm-Clustering" class="headerlink" title="EM Algorithm Clustering"></a>EM Algorithm Clustering</h3><p>모수에 대한 입력값(초기값)이 여러개가 나올것이고 그중에 확률적으로 제일 높은것을 선택<br>정규분포(클러스터)를 수정해가면서 정확도를 올림<br>생성모델 사용<br>생성모델(Generative Model) :  레이블이 없는 데이터도 학습하여 분류하는 모델</p>
+<p>likelihood : 가능도. 확률<br>likelihood 가 제일 높은것으로 선택<br>결과값을 가지고 입력값을 추측하는 느낌<br>클러스터링마다 각 점마다 각 클러스터에 들어갈 확률을 수치화함<br>(그만큼 다른것들보다 자원소모(메모리)같은게 더 요구됨)</p>
+<hr>
+
+<h3 id="PLSI"><a href="#PLSI" class="headerlink" title="PLSI"></a>PLSI</h3><p>생성모델 사용<br>몇개의 주제에 대해 클러스터링 해라<br>-&gt; 각각의 단어마다 주제를 선택하고 주제에 대해 단어집에서 나올 확률을 보고 확률이 높은 단어 선정</p>
+<p>(주제를 뽑을 확률) * (단어를 뽑을 확률)</p>
+<p>우리가 이런식으로 글을 쓴다는 모델<br>모든 단어를 카운트하면 너무 커지니까 단어수에 제한을 두어 벡터화함<br>EM Clustering과 마찬가지로 각 단어가 어떤 주제에 해당하는지 알 수 있음</p>
+<hr>
+
+<h3 id="Content-based-filtering-method"><a href="#Content-based-filtering-method" class="headerlink" title="Content based filtering method"></a>Content based filtering method</h3><p>item 이나 product등과 같은 actual content를 이용함<br>각 아이템간의 연관도를 이용해서 추천함</p>
+<hr>
+
+<h3 id="Collaborative-filtering-method"><a href="#Collaborative-filtering-method" class="headerlink" title="Collaborative filtering method"></a>Collaborative filtering method</h3><p>각각의 유저는 비슷한 다른 유저와 동일하게 행동한다는 가정을 한 메소드<br>누군가의 추천이 다른 유저들의 추천에 영향을 끼침<br>User 가 직접 점수를 매긴 item들에 대한 rating 을 이용해서 추천<br>다른 유저들의 의견을 이용함 </p>
+<p>유저의 평가, 샀다 안샀다 등의 유저 정보로<br>유저의 평가를 보고 비슷한 평가군의 추천을 해줌<br>memory based method : 평가내역등을 가지고 비슷하게 평가<br>model based method : 과거의 레이팅으로 데이터로 구체적인 벡터(모델)을 만들어서 평가 (PLSI), matrix factorization</p>
+<hr>
+
+<h3 id="Matrix-Factorization-행렬-분해"><a href="#Matrix-Factorization-행렬-분해" class="headerlink" title="Matrix Factorization(행렬 분해)"></a>Matrix Factorization(행렬 분해)</h3><p>곱해서 평점 매트릭스가 나오는 k개의 세로 유저행과 k개의 가로 영화수의 행렬을 구하고 곱해서 만든 행렬로 빈칸(평점을 매기지 않은 영화)를 추측할 수 있다.</p>
+<p>학습을 통해 벡터를 내적했을때, 결과가 현재 가지고 있는 평점 데이터와 비슷한 벡터 두개(유저, 아이템)를 구함</p>
+<p>곱하는 행렬이 여러개가 나올 수 있으니 정확하지 않을 수 있음<br>-&gt; summary등 다른 텍스트 정보를 이용해 각각 벡터에 PLSI를 사용해 주제확률로 범위를 좁혀 좀더 정확한 행렬을 찾을 수 있음 </p>
+<p>단, 텍스트 정보가 연관성이 없을 경우 더 부정확한 결과가 나올 수 있으므로 PLSI를 먼저 확인하여 데이터 연관성, 노이즈 정도를 확인하고 사용해야한다</p>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://NobleTuna.github.io/2019/06/25/bigdata/" data-id="cjxbwzk2v0000e0um934uf7q5" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "NobleTuna"
+        },
+        "headline": "빅데이터 도메인 학습",
+        "image": "http://NobleTuna.github.io/image/apartmentCloud.JPG",
+        "keywords": "bigdata clustering",
+        "genre": "Development BigData",
+        "datePublished": "2019-06-25",
+        "dateCreated": "2019-06-25",
+        "dateModified": "2019-06-25",
+        "url": "http://NobleTuna.github.io/2019/06/25/bigdata/",
+        "description": "
+수업내용을 내가 이해한대로 받아적은것이라 난잡하다어설프게 한글사이에 영어가 섞여있는건 강사님의 말을 내 뇌피유가 따라가지 못했기 때문관련 프로젝트 진행하기 전에 한번 훑으면 아이디어 등에 도움될듯 해서 남긴다
+
+
+클러스터링(Clustering)데이터를 유사도에 의해서 K개의 그룹으로 나누는것추천 시스템에서 주로 사용
+
+백화점 고객을 구매 상품에 따라서 클"
+        "wordCount": 615
+    }
+</script>
+
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/NobleTuna" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2019/06/23/hexo1/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Hexo 명령어 기록</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/06/25/bigdata/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/image/apartmentCloud.JPG)" alt="빅데이터 도메인 학습" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Development/">Development</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Development/BigData/">BigData</a></p>
+                            <p class="item-title"><a href="/2019/06/25/bigdata/" class="title">빅데이터 도메인 학습</a></p>
+                            <p class="item-date"><time datetime="2019-06-24T22:09:31.000Z" itemprop="datePublished">2019-06-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/06/23/hexo1/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/image/scaryKitty.JPG)" alt="Hexo 명령어 기록" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Development/">Development</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Development/Hexo/">Hexo</a></p>
+                            <p class="item-title"><a href="/2019/06/23/hexo1/" class="title">Hexo 명령어 기록</a></p>
+                            <p class="item-date"><time datetime="2019-06-23T14:05:56.000Z" itemprop="datePublished">2019-06-23</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/06/23/firstPost/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/image/warnning_ormag.JPG)" alt="첫 포스팅" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Diary/">Diary</a></p>
+                            <p class="item-title"><a href="/2019/06/23/firstPost/" class="title">첫 포스팅</a></p>
+                            <p class="item-date"><time datetime="2019-06-23T13:48:39.000Z" itemprop="datePublished">2019-06-23</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Development/">Development</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Development/BigData/">BigData</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Development/Hexo/">Hexo</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/bigdata/">bigdata</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/clustering/">clustering</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/잡담/">잡담</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/bigdata/" style="font-size: 10px;">bigdata</a> <a href="/tags/clustering/" style="font-size: 10px;">clustering</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/잡담/" style="font-size: 10px;">잡담</a>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2019 NobleTuna</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'tunas-room';
+    
+    
+    var disqus_url = 'http://NobleTuna.github.io/2019/06/25/bigdata/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
