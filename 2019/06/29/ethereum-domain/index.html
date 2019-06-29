@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    
+
+    
+    <title>이더리움 도메인 공부 | Tuna&#39;s Room</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="blockchain,ethereum">
+    
+    <meta name="description" content="앞 포스팅들과 마찬가지로 난잡하다.   이더리움분산 어플리케이션(스마트 컨트랙트)을 탑재한 블록체인 2.0 분산화된 상태전이 머신  트랜잭션에 기반한 상태 전이단, 이전 상태로 되돌아 갈 수 없음 암호화 알고리즘을 활용 -&amp;gt; 무작위로 상태전이가 일어나는 것을 방지 모든 참여자가 동일한 상태를 공유 블록은 해당 시점의 이더리움 상태를 나타낸다고 볼 수">
+<meta name="keywords" content="blockchain,ethereum">
+<meta property="og:type" content="article">
+<meta property="og:title" content="이더리움 도메인 공부">
+<meta property="og:url" content="http://NobleTuna.github.io/2019/06/29/ethereum-domain/index.html">
+<meta property="og:site_name" content="Tuna&#39;s Room">
+<meta property="og:description" content="앞 포스팅들과 마찬가지로 난잡하다.   이더리움분산 어플리케이션(스마트 컨트랙트)을 탑재한 블록체인 2.0 분산화된 상태전이 머신  트랜잭션에 기반한 상태 전이단, 이전 상태로 되돌아 갈 수 없음 암호화 알고리즘을 활용 -&amp;gt; 무작위로 상태전이가 일어나는 것을 방지 모든 참여자가 동일한 상태를 공유 블록은 해당 시점의 이더리움 상태를 나타낸다고 볼 수">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://nobletuna.github.io/image/sizuoka_jorenWashabi.jpg">
+<meta property="og:updated_time" content="2019-06-29T09:47:33.780Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="이더리움 도메인 공부">
+<meta name="twitter:description" content="앞 포스팅들과 마찬가지로 난잡하다.   이더리움분산 어플리케이션(스마트 컨트랙트)을 탑재한 블록체인 2.0 분산화된 상태전이 머신  트랜잭션에 기반한 상태 전이단, 이전 상태로 되돌아 갈 수 없음 암호화 알고리즘을 활용 -&amp;gt; 무작위로 상태전이가 일어나는 것을 방지 모든 참여자가 동일한 상태를 공유 블록은 해당 시점의 이더리움 상태를 나타낸다고 볼 수">
+<meta name="twitter:image" content="http://nobletuna.github.io/image/sizuoka_jorenWashabi.jpg">
+    
+    <link rel="canonical" href="http://NobleTuna.github.io/2019/06/29/ethereum-domain/">
+
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-143003265-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+    
+    
+
+
+</head>
+</html>
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">개설중...</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Development/">Development</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Development/BigData/">BigData</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Development/BlockChain/">BlockChain</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Development/Hexo/">Hexo</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Diary/">Diary</a></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/Development/">Development</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Development/BlockChain/">BlockChain</a>
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-ethereum-domain" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        이더리움 도메인 공부
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2019/06/29/ethereum-domain/" class="article-date">
+            <time datetime="2019-06-29T08:53:37.000Z" itemprop="datePublished">2019-06-29</time>
+        </a>
+    </div>
+
+		
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/blockchain/">blockchain</a>, <a class="tag-link" href="/tags/ethereum/">ethereum</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p><img src="/image/sizuoka_jorenWashabi.jpg" alt="2019-05-18 시즈오카 조렌폭포 옆 와사비밭"></p>
+<p>앞 포스팅들과 마찬가지로 난잡하다.</p>
+<hr>
+
+<h3 id="이더리움"><a href="#이더리움" class="headerlink" title="이더리움"></a>이더리움</h3><p>분산 어플리케이션(스마트 컨트랙트)을 탑재한 블록체인 2.0</p>
+<p>분산화된 상태전이 머신</p>
+<ul>
+<li>트랜잭션에 기반한 상태 전이<br>단, 이전 상태로 되돌아 갈 수 없음</li>
+<li>암호화 알고리즘을 활용 -&gt; 무작위로 상태전이가 일어나는 것을 방지</li>
+<li>모든 참여자가 동일한 상태를 공유</li>
+<li>블록은 해당 시점의 이더리움 상태를 나타낸다고 볼 수 있음</li>
+<li>현재 블록 -&gt; 현재 이더리움의 상태</li>
+<li>최초 상태 : Genesis Block</li>
+</ul>
+<hr>
+
+<h3 id="이더리움-계정의-종류"><a href="#이더리움-계정의-종류" class="headerlink" title="이더리움 계정의 종류"></a>이더리움 계정의 종류</h3><p>외부 소유 계정(External Owned Account)</p>
+<ul>
+<li>ETH 잔액 유지</li>
+<li>개인 키를 통한 주소 관리</li>
+<li>ETH 전송, 컨트랙트 실행을 위한 거래 전송 가능</li>
+<li>컨트랙트 코드를 가지고 있지 않음 (빈 문자열 hash 값)</li>
+</ul>
+<p>컨트랙트 계정(CA Contract Account)</p>
+<ul>
+<li>ETH 잔액 유지</li>
+<li>주소를 가지고 있으나 개인키는 존재하지 않음</li>
+<li>컨트랙트 코드를 보유</li>
+<li>거래나 메시지를 수신하면 보유하고 있는 컨트랙트 코드를 실행</li>
+</ul>
+<hr>
+
+<h3 id="이더리움의-상태전이-State-Transition"><a href="#이더리움의-상태전이-State-Transition" class="headerlink" title="이더리움의 상태전이 (State Transition)"></a>이더리움의 상태전이 (State Transition)</h3><ul>
+<li>블록 채굴로 인한 거래 내역 추가 시 상태전이 발생</li>
+<li>상태전이함수에 의해 수행</li>
+</ul>
+<hr>
+
+<h3 id="트랜잭션-종류"><a href="#트랜잭션-종류" class="headerlink" title="트랜잭션 종류"></a>트랜잭션 종류</h3><ul>
+<li><p>(외부) 트랜잭션 : 외부 소유계정에서 외부소유 계정, 외부 소유계정에서 스마트컨트랙트 까지의 트랜잭션<br>EOA가 다른 EOA 혹은 CA로 보내는 ‘서명된 메시지’<br>블록체인에 저장됨<br>출발지가 EOA</p>
+</li>
+<li><p>내부 트랜잭션 : 스마트컨트랙트 내부에서 진행되는 트랜잭션<br>CA가 다른 CA 혹은 EOA에게 전달되는 ‘서명되지 않은 메시지’<br>주로 컨트랙트 함수 호출에 사용<br>블록체인에 별도 저장되지않음<br>출발지가 CA</p>
+</li>
+</ul>
+<hr>
+
+<h3 id="블록"><a href="#블록" class="headerlink" title="블록"></a>블록</h3><p>이더리움 장부에 기록되는 데이터의 기본 단위<br>트랜잭션들의 집합</p>
+<hr>
+
+<h3 id="엉클-블록"><a href="#엉클-블록" class="headerlink" title="엉클 블록"></a>엉클 블록</h3><p>동일한 시점에 채굴된 블록 중 채굴 난이도가 낮아 메인 체인에 연결되지 못한 블록<br>이더리움은 엉클 블록채굴도 보상을 줌<br>블록생성 시간이 빠를 수록 엉클 블록의 발생 확률이 높음</p>
+<p>문제점<br>엉클블록에 포함된 트랜잭션은 승인되지 않았기 때문에 트랜잭션 처리 지연 발생<br>승인되지 않은 블록에 연산이 소모되어 연산량이 낭비됨<br>평균 블록생성 시간이 늘어나 채굴 난이도가 감소하게 되어 네트워크의 보안 수준이 낮아짐</p>
+<hr>
+
+<h3 id="작업증명-PoW-Proof-of-Work"><a href="#작업증명-PoW-Proof-of-Work" class="headerlink" title="작업증명(PoW, Proof of Work)"></a>작업증명(PoW, Proof of Work)</h3><p>이더리움 -&gt; Ethash</p>
+<ul>
+<li>채굴이 전문 채굴기에 몰리는것을 막기위한 이더리움의 작업증명</li>
+<li>계산은 어렵게, 검증은 쉽게</li>
+</ul>
+<h3 id="지분증명-PoS-Proof-of-Stake"><a href="#지분증명-PoS-Proof-of-Stake" class="headerlink" title="지분증명(PoS, Proof of Stake)"></a>지분증명(PoS, Proof of Stake)</h3><p>검증자가 가진 지분에 비례한 확률로 블록 생성 권한을 획득하고 생성된 블록을 원하는 체인에 연결, 보상 획득<br>PoW의 문제점을 개선</p>
+<ul>
+<li>전력 소모량, 채굴 중앙화 등<br>이더리움은 Casper를 통해 PoW로 전환중</li>
+</ul>
+<h3 id="Casper-FFG-Friendly-Finality-Gadget"><a href="#Casper-FFG-Friendly-Finality-Gadget" class="headerlink" title="Casper FFG(Friendly Finality Gadget)"></a>Casper FFG(Friendly Finality Gadget)</h3><p>PoW + PoS 하이브리드 방식<br>PoW 100개 블록마다 PoS</p>
+<hr>
+
+<h4 id="스마트-컨트랙트-개발-언어"><a href="#스마트-컨트랙트-개발-언어" class="headerlink" title="스마트 컨트랙트 개발 언어"></a>스마트 컨트랙트 개발 언어</h4><ul>
+<li>Solidity : 현재 가장 많이 사용되고 있는 이더리움 스마트 컨트랙트 언어</li>
+<li>하이퍼래저 패브릭이 여러 언어를 쓸 수 있는 이유 : 패쇄형 블록체인이라 언어가 다름에 따라 발생하는 과부화 위험이 적음</li>
+</ul>
+<hr>
+
+<h3 id="가스"><a href="#가스" class="headerlink" title="가스"></a>가스</h3><p>이더리움을 움직이게 하는 ‘기본 단위’<br>트랜잭션, 스마트 컨트랙트를 위한 수수료<br>스마트컨트랙트를 배포하거나 run할때 사용되는 수수료<br>채굴자는 가스가격이 높은것부터 스마트 컨트랙트를 수행시킴<br>가스 단위가 클 수록 트랜잭션의 빠른 처리 가능</p>
+<p>각 동작마다 정해진 가스 비용이 있고 배포자가 정한 임의의 가스 리밋이 있음<br>스마트 컨트랙트가 수행중에 가스비용이 리밋을 초과하게 되면 롤백됨</p>
+<ul>
+<li>가스 수수료를 통한 채굴자의 유입유도</li>
+<li>개발자의 간결한 코드 유도</li>
+<li>악의적인 스마트 컨트랙트의 반복을 막기 위한 시스템</li>
+</ul>
+<hr>
+
+<h2 id="EVM-Ethereum-virtual-Machine"><a href="#EVM-Ethereum-virtual-Machine" class="headerlink" title="EVM (Ethereum virtual Machine)"></a>EVM (Ethereum virtual Machine)</h2><p>이더리움 스마트 컨트랙트를 실행하기 위한 가상머신</p>
+<p>특징</p>
+<ul>
+<li>튜링 완전머신, 스택 기반 구조, 32 Byte의 메모리</li>
+<li>이더리움 주소 연산(160bit), 256 bit 암호화 알고리즘 등 이더리움 관련 구조 연산에 최적화</li>
+</ul>
+<p>모든 동작을 수행하기 위해서는 사전에 가스가 지불되어야 함<br>-&gt; DoS(Denial of Service)공격을 방지하기 위함</p>
+<p>EVM의 프로그램은 내부에서만 실행되고 가상머신의 HOST 환경에는 접근 불가<br>EVM간 메시지를 통해 데이터를 송수신할 수 있음<br>결정적 머신 -&gt; 때문에 항상 동일한 상태를 반환</p>
+<p>EVM Memory<br>스마트 컨트랙트 호출 시 생성<br>일반적인 PC의 RAM과 마찬가지로 휘발성<br>Memory의 크기가 증가 시 가스가 반드시 소모되며 가스량은 지수적으로 증가<br>사용자 정의 함수 내부 선언된 변수</p>
+<p>EVM Storage<br>key-value 저장소<br>key : 256qllxm, Value : 256비트<br>스마트 컨트랙트는 자신의 storage에만 접근 가능<br>스마트 컨트랙트에서 사용자 정의 함수 외부에 선언된 변수를 나타냄</p>
+<hr>
+
+<h1 id="Solidity"><a href="#Solidity" class="headerlink" title="Solidity"></a>Solidity</h1><p>이더리움 스마트 컨트랙트 언어의 종류<br>가장 많이 활용되는 언어<br>Java와 유사한 문법</p>
+<p>객체지향 언어<br>Class = Contract (유사)<br>정적 타입 언어</p>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://NobleTuna.github.io/2019/06/29/ethereum-domain/" data-id="cjxhcdw300005j4umha4k5rk7" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "NobleTuna"
+        },
+        "headline": "이더리움 도메인 공부",
+        "image": "http://NobleTuna.github.io/image/sizuoka_jorenWashabi.jpg",
+        "keywords": "blockchain ethereum",
+        "genre": "Development BlockChain",
+        "datePublished": "2019-06-29",
+        "dateCreated": "2019-06-29",
+        "dateModified": "2019-06-29",
+        "url": "http://NobleTuna.github.io/2019/06/29/ethereum-domain/",
+        "description": "
+앞 포스팅들과 마찬가지로 난잡하다.
+
+
+이더리움분산 어플리케이션(스마트 컨트랙트)을 탑재한 블록체인 2.0
+분산화된 상태전이 머신
+
+트랜잭션에 기반한 상태 전이단, 이전 상태로 되돌아 갈 수 없음
+암호화 알고리즘을 활용 -&gt; 무작위로 상태전이가 일어나는 것을 방지
+모든 참여자가 동일한 상태를 공유
+블록은 해당 시점의 이더리움 상태를 나타낸다고 볼 수"
+        "wordCount": 542
+    }
+</script>
+
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/NobleTuna" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2019/06/29/blockchain-domain/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">블록체인 도메인 공부</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/06/29/ethereum-domain/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/image/sizuoka_jorenWashabi.jpg)" alt="이더리움 도메인 공부" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Development/">Development</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Development/BlockChain/">BlockChain</a></p>
+                            <p class="item-title"><a href="/2019/06/29/ethereum-domain/" class="title">이더리움 도메인 공부</a></p>
+                            <p class="item-date"><time datetime="2019-06-29T08:53:37.000Z" itemprop="datePublished">2019-06-29</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/06/29/blockchain-domain/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/image/sizuoka_jorenFalls.jpg)" alt="블록체인 도메인 공부" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Development/">Development</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Development/BlockChain/">BlockChain</a></p>
+                            <p class="item-title"><a href="/2019/06/29/blockchain-domain/" class="title">블록체인 도메인 공부</a></p>
+                            <p class="item-date"><time datetime="2019-06-29T04:42:31.000Z" itemprop="datePublished">2019-06-29</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/06/25/bigdata/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/image/apartmentCloud.JPG)" alt="빅데이터 도메인 공부" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Development/">Development</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Development/BigData/">BigData</a></p>
+                            <p class="item-title"><a href="/2019/06/25/bigdata/" class="title">빅데이터 도메인 공부</a></p>
+                            <p class="item-date"><time datetime="2019-06-24T22:09:31.000Z" itemprop="datePublished">2019-06-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/06/23/hexo1/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/image/scaryKitty.JPG)" alt="Hexo 명령어 기록" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Development/">Development</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Development/Hexo/">Hexo</a></p>
+                            <p class="item-title"><a href="/2019/06/23/hexo1/" class="title">Hexo 명령어 기록</a></p>
+                            <p class="item-date"><time datetime="2019-06-23T14:05:56.000Z" itemprop="datePublished">2019-06-23</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/06/23/firstPost/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/image/warnning_ormag.JPG)" alt="첫 포스팅" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Diary/">Diary</a></p>
+                            <p class="item-title"><a href="/2019/06/23/firstPost/" class="title">첫 포스팅</a></p>
+                            <p class="item-date"><time datetime="2019-06-23T13:48:39.000Z" itemprop="datePublished">2019-06-23</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Development/">Development</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Development/BigData/">BigData</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Development/BlockChain/">BlockChain</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Development/Hexo/">Hexo</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/bigdata/">bigdata</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blockchain/">blockchain</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/clustering/">clustering</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ethereum/">ethereum</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/잡담/">잡담</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/bigdata/" style="font-size: 10px;">bigdata</a> <a href="/tags/blockchain/" style="font-size: 20px;">blockchain</a> <a href="/tags/clustering/" style="font-size: 10px;">clustering</a> <a href="/tags/ethereum/" style="font-size: 10px;">ethereum</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/잡담/" style="font-size: 10px;">잡담</a>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2019 NobleTuna</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'tunas-room';
+    
+    
+    var disqus_url = 'http://NobleTuna.github.io/2019/06/29/ethereum-domain/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
