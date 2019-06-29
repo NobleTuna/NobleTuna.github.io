@@ -6,7 +6,7 @@
     
 
     
-    <title>빅데이터 도메인 학습 | Tuna&#39;s Room</title>
+    <title>빅데이터 도메인 공부 | Tuna&#39;s Room</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
@@ -15,15 +15,15 @@
     <meta name="description" content="수업내용을 내가 이해한대로 받아적은것이라 난잡하다어설프게 한글사이에 영어가 섞여있는건 강사님의 말을 내 뇌피유가 따라가지 못했기 때문관련 프로젝트 진행하기 전에 한번 훑으면 아이디어 등에 도움될듯 해서 남긴다   클러스터링(Clustering)데이터를 유사도에 의해서 K개의 그룹으로 나누는것추천 시스템에서 주로 사용  백화점 고객을 구매 상품에 따라서 클">
 <meta name="keywords" content="bigdata,clustering">
 <meta property="og:type" content="article">
-<meta property="og:title" content="빅데이터 도메인 학습">
+<meta property="og:title" content="빅데이터 도메인 공부">
 <meta property="og:url" content="http://NobleTuna.github.io/2019/06/25/bigdata/index.html">
 <meta property="og:site_name" content="Tuna&#39;s Room">
 <meta property="og:description" content="수업내용을 내가 이해한대로 받아적은것이라 난잡하다어설프게 한글사이에 영어가 섞여있는건 강사님의 말을 내 뇌피유가 따라가지 못했기 때문관련 프로젝트 진행하기 전에 한번 훑으면 아이디어 등에 도움될듯 해서 남긴다   클러스터링(Clustering)데이터를 유사도에 의해서 K개의 그룹으로 나누는것추천 시스템에서 주로 사용  백화점 고객을 구매 상품에 따라서 클">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://nobletuna.github.io/image/apartmentCloud.JPG">
-<meta property="og:updated_time" content="2019-06-25T14:37:32.888Z">
+<meta property="og:updated_time" content="2019-06-29T05:28:15.970Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="빅데이터 도메인 학습">
+<meta name="twitter:title" content="빅데이터 도메인 공부">
 <meta name="twitter:description" content="수업내용을 내가 이해한대로 받아적은것이라 난잡하다어설프게 한글사이에 영어가 섞여있는건 강사님의 말을 내 뇌피유가 따라가지 못했기 때문관련 프로젝트 진행하기 전에 한번 훑으면 아이디어 등에 도움될듯 해서 남긴다   클러스터링(Clustering)데이터를 유사도에 의해서 K개의 그룹으로 나누는것추천 시스템에서 주로 사용  백화점 고객을 구매 상품에 따라서 클">
 <meta name="twitter:image" content="http://nobletuna.github.io/image/apartmentCloud.JPG">
     
@@ -161,7 +161,7 @@ ga('send', 'pageview');
                 
     
         <h1 class="article-title" itemprop="name">
-        빅데이터 도메인 학습
+        빅데이터 도메인 공부
         </h1>
     
 
@@ -252,13 +252,13 @@ ga('send', 'pageview');
 <h3 id="Content-based-filtering-method"><a href="#Content-based-filtering-method" class="headerlink" title="Content based filtering method"></a>Content based filtering method</h3><p>item 이나 product등과 같은 actual content를 이용함<br>각 아이템간의 연관도를 이용해서 추천함</p>
 <hr>
 
-<h3 id="Collaborative-filtering-method"><a href="#Collaborative-filtering-method" class="headerlink" title="Collaborative filtering method"></a>Collaborative filtering method</h3><p>각각의 유저는 비슷한 다른 유저와 동일하게 행동한다는 가정을 한 메소드<br>누군가의 추천이 다른 유저들의 추천에 영향을 끼침<br>User 가 직접 점수를 매긴 item들에 대한 rating 을 이용해서 추천<br>다른 유저들의 의견을 이용함 </p>
+<h3 id="Collaborative-filtering-method"><a href="#Collaborative-filtering-method" class="headerlink" title="Collaborative filtering method"></a>Collaborative filtering method</h3><p>각각의 유저는 비슷한 다른 유저와 동일하게 행동한다는 가정을 한 메소드<br>누군가의 추천이 다른 유저들의 추천에 영향을 끼침<br>User 가 직접 점수를 매긴 item들에 대한 rating 을 이용해서 추천<br>다른 유저들의 의견을 이용함</p>
 <p>유저의 평가, 샀다 안샀다 등의 유저 정보로<br>유저의 평가를 보고 비슷한 평가군의 추천을 해줌<br>memory based method : 평가내역등을 가지고 비슷하게 평가<br>model based method : 과거의 레이팅으로 데이터로 구체적인 벡터(모델)을 만들어서 평가 (PLSI), matrix factorization</p>
 <hr>
 
 <h3 id="Matrix-Factorization-행렬-분해"><a href="#Matrix-Factorization-행렬-분해" class="headerlink" title="Matrix Factorization(행렬 분해)"></a>Matrix Factorization(행렬 분해)</h3><p>곱해서 평점 매트릭스가 나오는 k개의 세로 유저행과 k개의 가로 영화수의 행렬을 구하고 곱해서 만든 행렬로 빈칸(평점을 매기지 않은 영화)를 추측할 수 있다.</p>
 <p>학습을 통해 벡터를 내적했을때, 결과가 현재 가지고 있는 평점 데이터와 비슷한 벡터 두개(유저, 아이템)를 구함</p>
-<p>곱하는 행렬이 여러개가 나올 수 있으니 정확하지 않을 수 있음<br>-&gt; summary등 다른 텍스트 정보를 이용해 각각 벡터에 PLSI를 사용해 주제확률로 범위를 좁혀 좀더 정확한 행렬을 찾을 수 있음 </p>
+<p>곱하는 행렬이 여러개가 나올 수 있으니 정확하지 않을 수 있음<br>-&gt; summary등 다른 텍스트 정보를 이용해 각각 벡터에 PLSI를 사용해 주제확률로 범위를 좁혀 좀더 정확한 행렬을 찾을 수 있음</p>
 <p>단, 텍스트 정보가 연관성이 없을 경우 더 부정확한 결과가 나올 수 있으므로 PLSI를 먼저 확인하여 데이터 연관성, 노이즈 정도를 확인하고 사용해야한다</p>
 
         </div>
@@ -267,7 +267,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="http://NobleTuna.github.io/2019/06/25/bigdata/" data-id="cjxh0kllr0000pkumaiicf0t2" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://NobleTuna.github.io/2019/06/25/bigdata/" data-id="cjxh36tj00000nsum2i6i4h00" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -337,13 +337,13 @@ ga('send', 'pageview');
             "@type": "Person",
             "name": "NobleTuna"
         },
-        "headline": "빅데이터 도메인 학습",
+        "headline": "빅데이터 도메인 공부",
         "image": "http://NobleTuna.github.io/image/apartmentCloud.JPG",
         "keywords": "bigdata clustering",
         "genre": "Development BigData",
         "datePublished": "2019-06-25",
         "dateCreated": "2019-06-25",
-        "dateModified": "2019-06-25",
+        "dateModified": "2019-06-29",
         "url": "http://NobleTuna.github.io/2019/06/25/bigdata/",
         "description": "
 수업내용을 내가 이해한대로 받아적은것이라 난잡하다어설프게 한글사이에 영어가 섞여있는건 강사님의 말을 내 뇌피유가 따라가지 못했기 때문관련 프로젝트 진행하기 전에 한번 훑으면 아이디어 등에 도움될듯 해서 남긴다
@@ -352,7 +352,7 @@ ga('send', 'pageview');
 클러스터링(Clustering)데이터를 유사도에 의해서 K개의 그룹으로 나누는것추천 시스템에서 주로 사용
 
 백화점 고객을 구매 상품에 따라서 클"
-        "wordCount": 615
+        "wordCount": 613
     }
 </script>
 
@@ -420,7 +420,7 @@ ga('send', 'pageview');
                             <a href="/2019/06/25/bigdata/" class="thumbnail">
     
     
-        <span style="background-image:url(/image/apartmentCloud.JPG)" alt="빅데이터 도메인 학습" class="thumbnail-image"></span>
+        <span style="background-image:url(/image/apartmentCloud.JPG)" alt="빅데이터 도메인 공부" class="thumbnail-image"></span>
     
     
 </a>
@@ -429,7 +429,7 @@ ga('send', 'pageview');
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Development/">Development</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Development/BigData/">BigData</a></p>
-                            <p class="item-title"><a href="/2019/06/25/bigdata/" class="title">빅데이터 도메인 학습</a></p>
+                            <p class="item-title"><a href="/2019/06/25/bigdata/" class="title">빅데이터 도메인 공부</a></p>
                             <p class="item-date"><time datetime="2019-06-24T22:09:31.000Z" itemprop="datePublished">2019-06-25</time></p>
                         </div>
                     </li>
