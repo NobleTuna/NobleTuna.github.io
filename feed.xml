@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Tuna&#39;s Room</title>
   
-  <subtitle>개설중...</subtitle>
+  
   <link href="/feed.xml" rel="self"/>
   
   <link href="http://NobleTuna.github.io/"/>
-  <updated>2019-06-29T09:47:33.780Z</updated>
+  <updated>2019-06-30T12:57:04.649Z</updated>
   <id>http://NobleTuna.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo README.md 추가하기</title>
+    <link href="http://NobleTuna.github.io/2019/06/30/hexo2/"/>
+    <id>http://NobleTuna.github.io/2019/06/30/hexo2/</id>
+    <published>2019-06-30T10:29:38.000Z</published>
+    <updated>2019-06-30T12:57:04.649Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/image/saturdayAfternoon.JPG" alt="2019-03-30 18:23 토요일"></p><h2 id="Hexo-README-md-파일-추가하기"><a href="#Hexo-README-md-파일-추가하기" class="headerlink" title="Hexo README.md 파일 추가하기"></a>Hexo README.md 파일 추가하기</h2><p>깃에 블로그에 대한 README 파일을 남기고 싶었다.</p><p>처음엔 단순히 public 폴더안에 README.md 파일을 만들고 deploy 하면 되겠지 했는데</p><p>핵소에선 public 폴더안 생성물은 generate 때마다 source폴더 내용물을 기반으로 갱신되면서 README파일이 삭제되는 문제가 있었다.</p><p>그렇다고 source폴더에 README.md를 만들면 generate 할때 html로 렌더링해버린다.</p><p>찾아보니 다행이 _config.yml에 랜더링을 제외하는 설정이 있었다.</p><p>_config.yml 에 <code>skip_render: README.md</code>를 추가해주고 source폴더에 README.md 파일을 넣는것으로 해결되었다.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/image/saturdayAfternoon.JPG&quot; alt=&quot;2019-03-30 18:23 토요일&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Hexo-README-md-파일-추가하기&quot;&gt;&lt;a href=&quot;#Hexo-README-md-파일-추가하기&quot;
+      
+    
+    </summary>
+    
+      <category term="Development" scheme="http://NobleTuna.github.io/categories/Development/"/>
+    
+      <category term="Hexo" scheme="http://NobleTuna.github.io/categories/Development/Hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://NobleTuna.github.io/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>이더리움 도메인 공부</title>

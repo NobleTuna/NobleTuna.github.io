@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>http://NobleTuna.github.io/tags/hexo/</loc>
+        <lastmod>2019-06-30T12:57:04.649Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://NobleTuna.github.io/tags/ethereum/</loc>
         <lastmod>2019-06-29T09:47:33.780Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -26,13 +33,6 @@
     <url>
         <loc>http://NobleTuna.github.io/tags/bigdata/</loc>
         <lastmod>2019-06-29T05:28:15.970Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://NobleTuna.github.io/tags/hexo/</loc>
-        <lastmod>2019-06-23T22:16:37.143Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
