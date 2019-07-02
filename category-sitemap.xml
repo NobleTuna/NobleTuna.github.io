@@ -8,14 +8,21 @@
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/categories/Development/Hexo/</loc>
-        <lastmod>2019-06-30T12:57:04.649Z</lastmod>
+        <loc>http://NobleTuna.github.io/categories/Development/etc/</loc>
+        <lastmod>2019-07-02T13:45:40.197Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://NobleTuna.github.io/categories/Development/</loc>
+        <lastmod>2019-07-02T13:45:40.197Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://NobleTuna.github.io/categories/Development/Hexo/</loc>
         <lastmod>2019-06-30T12:57:04.649Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
