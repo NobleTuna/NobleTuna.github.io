@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="http://NobleTuna.github.io/"/>
-  <updated>2019-07-06T07:03:02.775Z</updated>
+  <updated>2019-07-07T06:55:00.595Z</updated>
   <id>http://NobleTuna.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>미디어 쿼리 삽질 일기</title>
+    <link href="http://NobleTuna.github.io/2019/07/07/mediaqueryDiary-1/"/>
+    <id>http://NobleTuna.github.io/2019/07/07/mediaqueryDiary-1/</id>
+    <published>2019-07-07T06:55:00.000Z</published>
+    <updated>2019-07-07T06:55:00.595Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/image/sizuoka_hujifilm.jpg" alt="2019-05-18 시즈오카 조렌폭포 _ 후지필름의 낡은 광고가 눈에 띄었다"></p><p>Vue.js로 싱글페이지 프로젝트를 진행중 반응형 페이지를 만들어야 한다는 요구사항이 있었다.</p><p>일단 당장 생각대로 스크립트에서 장치명이나 너비를 가져와 그에 따른 스타일을 적용시키면 되겠지 하고 구글링을 해서 스크립트를 짰다.</p><p>화면을 줄여보며 만족해하고 있을때 미디어쿼리라는것을 알았다.</p><p>생각해보니 반응형 웹페이지 나온지가 언젠인데 이런 무식한 스크립트로 하고있을 리가 없었다.</p><p>더러운 스크립트 싹 지우고 스타일에서 미디어쿼리로 작성하다보니 Vue에도 뭔가 있지 않을까 해서 찾아보았다.</p><p>아니나 다를까 Vue-mq 라는 플러그인도 있었고 vuetify에서 뷰포트에 따라 조건을 지정해둔 Display 속성도 있었다..</p><p>템플릿 본문보다 길었던 반응형 스크립트가 <code>hidden-sm-and-down</code> 하나로 끝났다.</p><p>억울</p><hr><p>포스트 작성하다보니 미디어쿼리를 보다 문득 궁금해져 CSS단에서 조건처리가 되나 해서 찾아보다 SASS 라는 것을 찾았다.</p><p>CSS의 확장판인데 변수와 조건문까지도 지원을 하는 스타일언어였다.</p><p>그냥 이런게 있구나 하고 넘어간다.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/image/sizuoka_hujifilm.jpg&quot; alt=&quot;2019-05-18 시즈오카 조렌폭포 _ 후지필름의 낡은 광고가 눈에 띄었다&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Vue.js로 싱글페이지 프로젝트를 진행중 반응형 페이지를 만들어야 한다는
+      
+    
+    </summary>
+    
+      <category term="diary" scheme="http://NobleTuna.github.io/categories/diary/"/>
+    
+    
+      <category term="잡담" scheme="http://NobleTuna.github.io/tags/%EC%9E%A1%EB%8B%B4/"/>
+    
+      <category term="vue.js" scheme="http://NobleTuna.github.io/tags/vue-js/"/>
+    
+  </entry>
   
   <entry>
     <title>미디어 쿼리 삽질 일기</title>
