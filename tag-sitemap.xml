@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>http://NobleTuna.github.io/tags/firebase/</loc>
+        <lastmod>2019-07-15T12:08:37.077Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://NobleTuna.github.io/tags/vue-js/</loc>
         <lastmod>2019-07-07T22:44:26.260Z</lastmod>
         <changefreq>weekly</changefreq>

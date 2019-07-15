@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="http://NobleTuna.github.io/"/>
-  <updated>2019-07-07T22:44:26.260Z</updated>
+  <updated>2019-07-15T12:08:37.077Z</updated>
   <id>http://NobleTuna.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Firebase `auth/account-exists-with-different-credential` 에러 처리</title>
+    <link href="http://NobleTuna.github.io/2019/07/15/firebase1/"/>
+    <id>http://NobleTuna.github.io/2019/07/15/firebase1/</id>
+    <published>2019-07-15T11:35:58.000Z</published>
+    <updated>2019-07-15T12:08:37.077Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/image/shizuoka_motosu.jpg" alt="2019-05-19 야마나시 모토스 호수 _ 날씨가 좋았으면 구름대신 후지산이 보였을텐데.."></p><p>웹 프로젝트를 진행하면서 Firebase로 서버를 구현중에 로그인 중복처리 문제가 있었다.</p><p>구글계정으로 회원가입이 되어있는데 같은 이메일 주소의 페이스북으로 가입하려면 <code>auth/account-exists-with-different-credential</code> 에러가 발생한다.</p><p>당연한 에러긴 한데 Firebase 자체적으로 관련 해결 메서드를 제공하지 않아서 처리해주어야 한다.</p><p>구글링을 해서 어찌어찌 해결되나 싶더니 팝업관련 에러가 난다.</p><p>페이스북 로그인창에서 또 팝업창을 요청하니 브라우져에서 막아 발생하는 에러였다.</p><p>Firebase 에서 Redirect 방식의 로그인처리를 지원해주었기 때문에 이걸로 해결했다.</p><p>Swal.fire는 SweetAlert2 라는 alert를 예쁘게 해주는 외부 라이브러리니 신경쓰지 않아도 된다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">loginWithFacebook() &#123;</span><br><span class="line">    var provider = new firebase.auth.FacebookAuthProvider();</span><br><span class="line">    return firebase.auth().signInWithPopup(provider).then(function(result) &#123;</span><br><span class="line">      let accessToken = result.credential.accessToken</span><br><span class="line">      let user = result.user</span><br><span class="line">      return result</span><br><span class="line">    &#125;).catch(function(error) &#123;</span><br><span class="line">      if (error.code === &apos;auth/account-exists-with-different-credential&apos;) &#123;</span><br><span class="line">        firebase.auth().fetchSignInMethodsForEmail(error.email).then(function(providers) &#123;</span><br><span class="line">          if (providers[0] == &apos;google.com&apos;) &#123;</span><br><span class="line">            var provider = new firebase.auth.GoogleAuthProvider();</span><br><span class="line">            // popup 에러때문에 리디렉 signInWithRedirect</span><br><span class="line">            firebase.auth().signInWithRedirect(provider).then(function(result) &#123;</span><br><span class="line">              firebase.auth().signInWithCredential(result.credential).then(user =&gt; &#123;</span><br><span class="line">                user.linkWithCredential(error.credential)</span><br><span class="line">              &#125;).catch(function(e) &#123;</span><br><span class="line">              &#125;)</span><br><span class="line">            &#125;).catch(function(e) &#123;</span><br><span class="line">            &#125;)</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">      &#125; else &#123;</span><br><span class="line">        Swal.fire(&#123;</span><br><span class="line">          title: &apos;Error!&apos;,</span><br><span class="line">          text: &apos;예기치 않은 문제가 발생했습니다. 관리자에게 문의바랍니다. ErrorCode : &apos; + error.code,</span><br><span class="line">          type: &apos;error&apos;,</span><br><span class="line">          confirmButtonText: &apos;Ok!&apos;</span><br><span class="line">        &#125;)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/image/shizuoka_motosu.jpg&quot; alt=&quot;2019-05-19 야마나시 모토스 호수 _ 날씨가 좋았으면 구름대신 후지산이 보였을텐데..&quot;&gt;&lt;/p&gt;
+&lt;p&gt;웹 프로젝트를 진행하면서 Firebase로 서버를 구현중에 
+      
+    
+    </summary>
+    
+      <category term="Development" scheme="http://NobleTuna.github.io/categories/Development/"/>
+    
+      <category term="Firebase" scheme="http://NobleTuna.github.io/categories/Development/Firebase/"/>
+    
+    
+      <category term="firebase" scheme="http://NobleTuna.github.io/tags/firebase/"/>
+    
+  </entry>
   
   <entry>
     <title>미디어 쿼리 삽질 일기</title>
