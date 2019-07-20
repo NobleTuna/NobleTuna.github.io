@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="http://NobleTuna.github.io/"/>
-  <updated>2019-07-15T22:59:38.591Z</updated>
+  <updated>2019-07-20T04:35:00.305Z</updated>
   <id>http://NobleTuna.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>v-for 에서 이벤트 처리</title>
+    <link href="http://NobleTuna.github.io/2019/07/20/vue1/"/>
+    <id>http://NobleTuna.github.io/2019/07/20/vue1/</id>
+    <published>2019-07-20T03:46:29.000Z</published>
+    <updated>2019-07-20T04:35:00.305Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/image/myCat.JPG" alt="고양이는 실리콘 고양이가 있어요"></p><p>웹 프로젝트 중 헤더부분 아이콘배치를 v-for문을 이용해서 반복문 처리하려는데 이벤트 처리부분이 문제가 됬다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;v-btn</span><br><span class="line">  v-for=&quot;btnItem in btnItems&quot;</span><br><span class="line">  icon</span><br><span class="line">  :title=&quot;btnItem.title&quot;</span><br><span class="line">  :key=&quot;btnItem.title&quot;&gt;</span><br><span class="line">  &lt;v-icon @click=&quot;btnItem.clickAction&quot;&gt; &lt;/v-icon&gt;</span><br><span class="line">&lt;/v-btn&gt;</span><br></pre></td></tr></table></figure><p>반복문 안에서 각 버튼별로 <code>@click=&quot;btnItem.clickAction&quot;</code> 에 다른 메소드를 실행시켜야 되는데 데이터 안에 메소드가 들어가 있는 것을 본적이 없었다.</p><p>될것같은데 안되네? 하면서 구글링하니 해결책이 쉽게 나오지않았다.</p><p>생각보다 시간이 걸렸는데 해놓고 보니 역시 들인 시간에 비해 간단했다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">export default &#123;</span><br><span class="line">  data() &#123;</span><br><span class="line">   return &#123;</span><br><span class="line">    btnItems: [</span><br><span class="line">       &#123;</span><br><span class="line">         title: &quot;Bookmark&quot;,</span><br><span class="line">         clickAction: () =&gt; &#123;</span><br><span class="line">           this.favorite();</span><br><span class="line">         &#125;,</span><br><span class="line">         icon: &quot;bookmark&quot;</span><br><span class="line">       &#125;,</span><br><span class="line">       &#123;</span><br><span class="line">         title: &quot;translate&quot;,</span><br><span class="line">         clickAction: () =&gt; &#123;</span><br><span class="line">           this.trans();</span><br><span class="line">         &#125;,</span><br><span class="line">         icon: &quot;g_translate&quot;</span><br><span class="line">       &#125;</span><br><span class="line">     ]</span><br><span class="line">   &#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods:&#123;</span><br><span class="line">    favorite()&#123;&#125;,</span><br><span class="line">    trans()&#123;&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>function() 을 사용하면 함수 안에 this가 가리키는게 뷰가 되므로 에로우 펑션을 쓰던지 함수 밖에서 this를 다른 변수에 선언하고 사용해야된다.</p><p>에로우 펑션이 익숙하지 않아서인지 지금봐도<br><code>clickAction: () =&gt; { this.favorite(); }</code> 부분은 어색하다.</p><p>이 방식으로 라우터 이동도 메서드로 내려서 이벤트를 모두 반복으로 처리할수 있었다.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/image/myCat.JPG&quot; alt=&quot;고양이는 실리콘 고양이가 있어요&quot;&gt;&lt;/p&gt;
+&lt;p&gt;웹 프로젝트 중 헤더부분 아이콘배치를 v-for문을 이용해서 반복문 처리하려는데 이벤트 처리부분이 문제가 됬다.&lt;/p&gt;
+&lt;figure cl
+      
+    
+    </summary>
+    
+      <category term="Development" scheme="http://NobleTuna.github.io/categories/Development/"/>
+    
+      <category term="Vue.js" scheme="http://NobleTuna.github.io/categories/Development/Vue-js/"/>
+    
+    
+      <category term="vue.js" scheme="http://NobleTuna.github.io/tags/vue-js/"/>
+    
+  </entry>
   
   <entry>
     <title>Firebase &#39;auth/account-exists-with-different-credential&#39; 에러 처리</title>

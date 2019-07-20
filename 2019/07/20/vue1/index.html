@@ -6,19 +6,28 @@
     
 
     
-    <title>Category: BigData | Tuna&#39;s Room</title>
+    <title>v-for 에서 이벤트 처리 | Tuna&#39;s Room</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Tuna&#39;s Room">
-<meta property="og:url" content="http://NobleTuna.github.io/categories/Development/BigData/index.html">
-<meta property="og:site_name" content="Tuna&#39;s Room">
-<meta property="og:locale" content="en">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tuna&#39;s Room">
+        <meta name="keywords" content="vue.js">
     
-    <link rel="canonical" href="http://NobleTuna.github.io/categories/development/bigdata/">
+    <meta name="description" content="웹 프로젝트 중 헤더부분 아이콘배치를 v-for문을 이용해서 반복문 처리하려는데 이벤트 처리부분이 문제가 됬다. 1234567&amp;lt;v-btn  v-for=&amp;quot;btnItem in btnItems&amp;quot;  icon  :title=&amp;quot;btnItem.title&amp;quot;  :key=&amp;quot;btnItem.title&amp;quot;&amp;gt;  &amp;lt">
+<meta name="keywords" content="vue.js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="v-for 에서 이벤트 처리">
+<meta property="og:url" content="http://NobleTuna.github.io/2019/07/20/vue1/index.html">
+<meta property="og:site_name" content="Tuna&#39;s Room">
+<meta property="og:description" content="웹 프로젝트 중 헤더부분 아이콘배치를 v-for문을 이용해서 반복문 처리하려는데 이벤트 처리부분이 문제가 됬다. 1234567&amp;lt;v-btn  v-for=&amp;quot;btnItem in btnItems&amp;quot;  icon  :title=&amp;quot;btnItem.title&amp;quot;  :key=&amp;quot;btnItem.title&amp;quot;&amp;gt;  &amp;lt">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://nobletuna.github.io/image/myCat.JPG">
+<meta property="og:updated_time" content="2019-07-20T04:35:00.305Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="v-for 에서 이벤트 처리">
+<meta name="twitter:description" content="웹 프로젝트 중 헤더부분 아이콘배치를 v-for문을 이용해서 반복문 처리하려는데 이벤트 처리부분이 문제가 됬다. 1234567&amp;lt;v-btn  v-for=&amp;quot;btnItem in btnItems&amp;quot;  icon  :title=&amp;quot;btnItem.title&amp;quot;  :key=&amp;quot;btnItem.title&amp;quot;&amp;gt;  &amp;lt">
+<meta name="twitter:image" content="http://nobletuna.github.io/image/myCat.JPG">
+    
+    <link rel="canonical" href="http://NobleTuna.github.io/2019/07/20/vue1/">
 
     
 
@@ -138,80 +147,160 @@ ga('send', 'pageview');
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-folder-open"></i>Category: <em class="page-title-link">BigData</em>
+    <a class="page-title-link" href="/categories/Development/">Development</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Development/Vue-js/">Vue.js</a>
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            
-
-    
-    
+                            <article id="post-vue1" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2019" class="archive-year"><i class="icon fa fa-calendar-o"></i>2019</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2019/06/25/bigdata/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/image/apartmentCloud.JPG)" alt="빅데이터 도메인 공부" class="thumbnail-image"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier data-disqus-url="http://NobleTuna.github.io/2019/06/25/bigdata/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Development/">Development</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Development/BigData/">BigData</a>
-            </div>
-            <div class="date"><time datetime="2019-06-24T22:09:31.000Z" itemprop="datePublished">2019-06-25</time></div>
-        </div>
-        
+            <header class="article-header">
+                
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2019/06/25/bigdata/">빅데이터 도메인 공부</a>
+        v-for 에서 이벤트 처리
         </h1>
     
 
-        <p class="article-excerpt">
-            
-수업내용을 내가 이해한대로 받아적은것이라 난잡하다어설프게 한글사이에 영어가 섞여있는건 강사님의 말을 내 뇌피유가 따라가지 못했기 때문관련 프로젝트 진행하기 전에 한번 훑으면 아이디어 등에 도움될듯 해서 남긴다
-
-
-클러스터링(Clustering)데이터를 유사도에 의해서 K개의 그룹으로 나누는것추천 시스템에서 주로 사용
-
-백화점 고객을 구매 상품에 따라서 클
-        </p>
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2019/07/20/vue1/" class="article-date">
+            <time datetime="2019-07-20T03:46:29.000Z" itemprop="datePublished">2019-07-20</time>
+        </a>
     </div>
-</article>
-    
+
+		
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/vue-js/">vue.js</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p><img src="/image/myCat.JPG" alt="고양이는 실리콘 고양이가 있어요"></p>
+<p>웹 프로젝트 중 헤더부분 아이콘배치를 v-for문을 이용해서 반복문 처리하려는데 이벤트 처리부분이 문제가 됬다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;v-btn</span><br><span class="line">  v-for=&quot;btnItem in btnItems&quot;</span><br><span class="line">  icon</span><br><span class="line">  :title=&quot;btnItem.title&quot;</span><br><span class="line">  :key=&quot;btnItem.title&quot;&gt;</span><br><span class="line">  &lt;v-icon @click=&quot;btnItem.clickAction&quot;&gt; &lt;/v-icon&gt;</span><br><span class="line">&lt;/v-btn&gt;</span><br></pre></td></tr></table></figure>
+
+<p>반복문 안에서 각 버튼별로 <code>@click=&quot;btnItem.clickAction&quot;</code> 에 다른 메소드를 실행시켜야 되는데 데이터 안에 메소드가 들어가 있는 것을 본적이 없었다.</p>
+<p>될것같은데 안되네? 하면서 구글링하니 해결책이 쉽게 나오지않았다.</p>
+<p>생각보다 시간이 걸렸는데 해놓고 보니 역시 들인 시간에 비해 간단했다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">export default &#123;</span><br><span class="line">  data() &#123;</span><br><span class="line">   return &#123;</span><br><span class="line">    btnItems: [</span><br><span class="line">       &#123;</span><br><span class="line">         title: &quot;Bookmark&quot;,</span><br><span class="line">         clickAction: () =&gt; &#123;</span><br><span class="line">           this.favorite();</span><br><span class="line">         &#125;,</span><br><span class="line">         icon: &quot;bookmark&quot;</span><br><span class="line">       &#125;,</span><br><span class="line">       &#123;</span><br><span class="line">         title: &quot;translate&quot;,</span><br><span class="line">         clickAction: () =&gt; &#123;</span><br><span class="line">           this.trans();</span><br><span class="line">         &#125;,</span><br><span class="line">         icon: &quot;g_translate&quot;</span><br><span class="line">       &#125;</span><br><span class="line">     ]</span><br><span class="line">   &#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods:&#123;</span><br><span class="line">    favorite()&#123;&#125;,</span><br><span class="line">    trans()&#123;&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>function() 을 사용하면 함수 안에 this가 가리키는게 뷰가 되므로 에로우 펑션을 쓰던지 함수 밖에서 this를 다른 변수에 선언하고 사용해야된다.</p>
+<p>에로우 펑션이 익숙하지 않아서인지 지금봐도<br><code>clickAction: () =&gt; { this.favorite(); }</code> 부분은 어색하다.</p>
+<p>이 방식으로 라우터 이동도 메서드로 내려서 이벤트를 모두 반복으로 처리할수 있었다.</p>
+
         </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://NobleTuna.github.io/2019/07/20/vue1/" data-id="cjyb1hamr000ko8umfpfnv2l0" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "NobleTuna"
+        },
+        "headline": "v-for 에서 이벤트 처리",
+        "image": "http://NobleTuna.github.io/image/myCat.JPG",
+        "keywords": "vue.js",
+        "genre": "Development Vue.js",
+        "datePublished": "2019-07-20",
+        "dateCreated": "2019-07-20",
+        "dateModified": "2019-07-20",
+        "url": "http://NobleTuna.github.io/2019/07/20/vue1/",
+        "description": "
+웹 프로젝트 중 헤더부분 아이콘배치를 v-for문을 이용해서 반복문 처리하려는데 이벤트 처리부분이 문제가 됬다.
+1234567&lt;v-btn  v-for=&quot;btnItem in btnItems&quot;  icon  :title=&quot;btnItem.title&quot;  :key=&quot;btnItem.title&quot;&gt;  &lt"
+        "wordCount": 345
+    }
+</script>
+
+</article>
+
+    <section id="comments">
     
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
 
-
-    </div></section>
-
+    
+    </section>
 
 
 
@@ -233,6 +322,19 @@ ga('send', 'pageview');
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2019/07/15/firebase1/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Firebase &#39;auth/account-exists-with-different-credential&#39; 에러 처리</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
@@ -415,11 +517,13 @@ ga('send', 'pageview');
     var disqus_shortname = 'tunas-room';
     
     
+    var disqus_url = 'http://NobleTuna.github.io/2019/07/20/vue1/';
+    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>

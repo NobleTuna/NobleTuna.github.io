@@ -8,14 +8,21 @@
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/categories/Development/Firebase/</loc>
-        <lastmod>2019-07-15T22:59:38.591Z</lastmod>
+        <loc>http://NobleTuna.github.io/categories/Development/Vue-js/</loc>
+        <lastmod>2019-07-20T04:35:00.305Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://NobleTuna.github.io/categories/Development/</loc>
+        <lastmod>2019-07-20T04:35:00.305Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://NobleTuna.github.io/categories/Development/Firebase/</loc>
         <lastmod>2019-07-15T22:59:38.591Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
