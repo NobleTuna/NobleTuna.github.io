@@ -6,28 +6,28 @@
     
 
     
-    <title>Git 원격 저장소 여러개 연결하기 | Tuna&#39;s Room</title>
+    <title>Vue.js 배열 데이터 변경 | Tuna&#39;s Room</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="git">
+        <meta name="keywords" content="vue.js">
     
-    <meta name="description" content="Git 원격 저장소 여러개 연결하기원격저장소를 한개씩만 써봤는데 깃랩과 깃허브 두개를 연동할 일이 생겨서 구글링하고 정리했다. git remote add &amp;quot;저장소명&amp;quot; &amp;quot;url&amp;quot; 형태로 add 만 붙여주면 됬다 깃허브에서 로컬로 클론해온 후 깃랩과 연동하는 과정을 나열해보면 git clone https://github.c">
-<meta name="keywords" content="git">
+    <meta name="description" content="프로젝트 중 팀원의 컴포넌트에서 데이터가 앞뒤로 콘솔 찍어봐도 분명히 바뀌는데 화면이 갱신되지 않는 문제가 있었다. 검색결과 배열이 문제였다.  Vue는 감시중인 배열의 변이 메소드(push, pop, shift, unshift, splice, sort, reverse)를 래핑하여 갱신을 트리거 한다. JavaScript의 제한으로 인해 Vue는 배열에">
+<meta name="keywords" content="vue.js">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git 원격 저장소 여러개 연결하기">
-<meta property="og:url" content="http://NobleTuna.github.io/2019/07/02/git1/index.html">
+<meta property="og:title" content="Vue.js 배열 데이터 변경">
+<meta property="og:url" content="http://NobleTuna.github.io/2019/07/23/vue2/index.html">
 <meta property="og:site_name" content="Tuna&#39;s Room">
-<meta property="og:description" content="Git 원격 저장소 여러개 연결하기원격저장소를 한개씩만 써봤는데 깃랩과 깃허브 두개를 연동할 일이 생겨서 구글링하고 정리했다. git remote add &amp;quot;저장소명&amp;quot; &amp;quot;url&amp;quot; 형태로 add 만 붙여주면 됬다 깃허브에서 로컬로 클론해온 후 깃랩과 연동하는 과정을 나열해보면 git clone https://github.c">
+<meta property="og:description" content="프로젝트 중 팀원의 컴포넌트에서 데이터가 앞뒤로 콘솔 찍어봐도 분명히 바뀌는데 화면이 갱신되지 않는 문제가 있었다. 검색결과 배열이 문제였다.  Vue는 감시중인 배열의 변이 메소드(push, pop, shift, unshift, splice, sort, reverse)를 래핑하여 갱신을 트리거 한다. JavaScript의 제한으로 인해 Vue는 배열에">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://nobletuna.github.io/image/aptCherryBlossom.jpg">
-<meta property="og:updated_time" content="2019-07-02T15:07:53.088Z">
+<meta property="og:image" content="http://nobletuna.github.io/image/sizuoka_trafficLight.JPG">
+<meta property="og:updated_time" content="2019-07-23T12:27:29.144Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git 원격 저장소 여러개 연결하기">
-<meta name="twitter:description" content="Git 원격 저장소 여러개 연결하기원격저장소를 한개씩만 써봤는데 깃랩과 깃허브 두개를 연동할 일이 생겨서 구글링하고 정리했다. git remote add &amp;quot;저장소명&amp;quot; &amp;quot;url&amp;quot; 형태로 add 만 붙여주면 됬다 깃허브에서 로컬로 클론해온 후 깃랩과 연동하는 과정을 나열해보면 git clone https://github.c">
-<meta name="twitter:image" content="http://nobletuna.github.io/image/aptCherryBlossom.jpg">
+<meta name="twitter:title" content="Vue.js 배열 데이터 변경">
+<meta name="twitter:description" content="프로젝트 중 팀원의 컴포넌트에서 데이터가 앞뒤로 콘솔 찍어봐도 분명히 바뀌는데 화면이 갱신되지 않는 문제가 있었다. 검색결과 배열이 문제였다.  Vue는 감시중인 배열의 변이 메소드(push, pop, shift, unshift, splice, sort, reverse)를 래핑하여 갱신을 트리거 한다. JavaScript의 제한으로 인해 Vue는 배열에">
+<meta name="twitter:image" content="http://nobletuna.github.io/image/sizuoka_trafficLight.JPG">
     
-    <link rel="canonical" href="http://NobleTuna.github.io/2019/07/02/git1/">
+    <link rel="canonical" href="http://NobleTuna.github.io/2019/07/23/vue2/">
 
     
 
@@ -147,19 +147,19 @@ ga('send', 'pageview');
                         <div class="main-body-header">
     <h1 class="header">
     
-    <a class="page-title-link" href="/categories/Development/">Development</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Development/etc/">etc.</a>
+    <a class="page-title-link" href="/categories/Development/">Development</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Development/Vue-js/">Vue.js</a>
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            <article id="post-git1" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-vue2" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        Git 원격 저장소 여러개 연결하기
+        Vue.js 배열 데이터 변경
         </h1>
     
 
@@ -169,8 +169,8 @@ ga('send', 'pageview');
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2019/07/02/git1/" class="article-date">
-            <time datetime="2019-07-02T12:32:29.000Z" itemprop="datePublished">2019-07-02</time>
+        <a href="/2019/07/23/vue2/" class="article-date">
+            <time datetime="2019-07-23T11:36:06.000Z" itemprop="datePublished">2019-07-23</time>
         </a>
     </div>
 
@@ -179,31 +179,29 @@ ga('send', 'pageview');
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/git/">git</a>
+        <a class="tag-link" href="/tags/vue-js/">vue.js</a>
     </div>
 
             </div>
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p><img src="/image/aptCherryBlossom.jpg" alt="2019-03-31 13:56 아파트 벚꽃"></p>
-<h2 id="Git-원격-저장소-여러개-연결하기"><a href="#Git-원격-저장소-여러개-연결하기" class="headerlink" title="Git 원격 저장소 여러개 연결하기"></a>Git 원격 저장소 여러개 연결하기</h2><p>원격저장소를 한개씩만 써봤는데 깃랩과 깃허브 두개를 연동할 일이 생겨서 구글링하고 정리했다.</p>
-<p><code>git remote add &quot;저장소명&quot; &quot;url&quot;</code></p>
-<p>형태로 add 만 붙여주면 됬다</p>
-<p>깃허브에서 로컬로 클론해온 후 깃랩과 연동하는 과정을 나열해보면</p>
-<p><code>git clone https://github.com/NobleTuna/example.git</code><br>깃허브에서 로컬로 클론, 이 경우 저장소 명은 origin 이 된다</p>
-<p><code>cd example</code><br>프로젝트 폴더로 이동</p>
-<p><code>git remote add gitLab https://lab.tmp.com/NobleTuna/example.git</code><br>깃랩에 생성해둔 example 저장소를 gitLab 으로 명시하고 연결</p>
-<p><code>git remote -v</code><br>원격 저장소 목록을 확인하는 명령어</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">gitLab https://lab.tmp.com/NobleTuna/example.git(fetch)</span><br><span class="line">gitLab https://lab.tmp.com/NobleTuna/example.git(push)</span><br><span class="line">origin https://github.com/NobleTuna/example.git(fetch)</span><br><span class="line">origin https://github.com/NobleTuna/example.git(push)</span><br></pre></td></tr></table></figure>
-<p>명시하지 않은 저장소 origin 과 명시하고 추가한 gitLab 저장소 확인 가능</p>
-<p>이후 push 나 pull 할 경우 각각 저장소를 명시하면 된다.</p>
-<p><code>git pull origin master</code><br>origin(깃허브)에서 pull</p>
-<p><code>git push gitLab master</code><br>gitLab(깃랩)으로 push</p>
-<p>반대의 경우도 같다.</p>
-<p>push를 하기위에 두번씩 치기 귀찮을 경우 <a href="https://stackoverflow.com/questions/849308/pull-push-from-multiple-remote-locations/3195446#3195446" rel="external nofollow noopener noreferrer" target="_blank">stackoverflow</a>를 참고</p>
-<p>추가로 원격저장소 주소를 변경하는 경우<br><code>git remote set-url &quot;저장소명&quot; &quot;새로운URL&quot;</code></p>
-<p>원격저장소 명시한 이름을 변경하는 경우<br><code>git remote rename &quot;현재저장소명&quot; &quot;새로운저장소명&quot;</code></p>
+            <p><img src="/image/sizuoka_trafficLight.JPG" alt="2019-05-19 시즈오카 이즈시 _ 소도시 여행은 소소한 것들도 기억에 남았다. "></p>
+<p>프로젝트 중 팀원의 컴포넌트에서 데이터가 앞뒤로 콘솔 찍어봐도 분명히 바뀌는데 화면이 갱신되지 않는 문제가 있었다.</p>
+<p>검색결과 배열이 문제였다.</p>
+<blockquote>
+<h4 id="Vue는-감시중인-배열의-변이-메소드-push-pop-shift-unshift-splice-sort-reverse-를-래핑하여-갱신을-트리거-한다"><a href="#Vue는-감시중인-배열의-변이-메소드-push-pop-shift-unshift-splice-sort-reverse-를-래핑하여-갱신을-트리거-한다" class="headerlink" title="Vue는 감시중인 배열의 변이 메소드(push, pop, shift, unshift, splice, sort, reverse)를 래핑하여 갱신을 트리거 한다."></a>Vue는 감시중인 배열의 변이 메소드(push, pop, shift, unshift, splice, sort, reverse)를 래핑하여 갱신을 트리거 한다.</h4></blockquote>
+<p>JavaScript의 제한으로 인해 Vue는 배열에 대해 다음과 같은 변경 사항을 감지할 수 없다.</p>
+<ul>
+<li>인덱스로 배열에 있는 항목을 직접 설정하는 경우</li>
+<li>배열 길이를 수정하는 경우</li>
+</ul>
+<p>때문에 직접 설정하려면 다음과 같이 써야한다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// Vue.set</span><br><span class="line">Vue.set(example1.items, indexOfItem, newValue)</span><br><span class="line"></span><br><span class="line">// Array.prototype.splice</span><br><span class="line">example1.items.splice(indexOfItem, 1, newValue)</span><br></pre></td></tr></table></figure>
+
+<p>출처: <a href="https://ksh-code.tistory.com/27" rel="external nofollow noopener noreferrer" target="_blank">https://ksh-code.tistory.com/27</a> [알고리즘을 좋아하는 나]</p>
+<p>문제의 부분은 v-for 에서 배열의 내용을 인덱스로 접근해 바꿔주는 부분이였고 아래와 같이 해결했다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">export default &#123;</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      show: [false, false, false, false]</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    chageIcon(index) &#123;</span><br><span class="line">      // this.show[index] = !this.show[index]</span><br><span class="line">      this.$set(this.show, index, !this.show[index]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
         </div>
         <footer class="article-footer">
@@ -211,7 +209,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="http://NobleTuna.github.io/2019/07/02/git1/" data-id="cjyfsnyxg0007tkumtemezfmi" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://NobleTuna.github.io/2019/07/23/vue2/" data-id="cjyfsnyxn000etkumoe1mue5l" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -281,21 +279,21 @@ ga('send', 'pageview');
             "@type": "Person",
             "name": "NobleTuna"
         },
-        "headline": "Git 원격 저장소 여러개 연결하기",
-        "image": "http://NobleTuna.github.io/image/aptCherryBlossom.jpg",
-        "keywords": "git",
-        "genre": "Development etc.",
-        "datePublished": "2019-07-02",
-        "dateCreated": "2019-07-02",
-        "dateModified": "2019-07-03",
-        "url": "http://NobleTuna.github.io/2019/07/02/git1/",
+        "headline": "Vue.js 배열 데이터 변경",
+        "image": "http://NobleTuna.github.io/image/sizuoka_trafficLight.JPG",
+        "keywords": "vue.js",
+        "genre": "Development Vue.js",
+        "datePublished": "2019-07-23",
+        "dateCreated": "2019-07-23",
+        "dateModified": "2019-07-23",
+        "url": "http://NobleTuna.github.io/2019/07/23/vue2/",
         "description": "
-Git 원격 저장소 여러개 연결하기원격저장소를 한개씩만 써봤는데 깃랩과 깃허브 두개를 연동할 일이 생겨서 구글링하고 정리했다.
-git remote add &quot;저장소명&quot; &quot;url&quot;
-형태로 add 만 붙여주면 됬다
-깃허브에서 로컬로 클론해온 후 깃랩과 연동하는 과정을 나열해보면
-git clone https://github.c"
-        "wordCount": 148
+프로젝트 중 팀원의 컴포넌트에서 데이터가 앞뒤로 콘솔 찍어봐도 분명히 바뀌는데 화면이 갱신되지 않는 문제가 있었다.
+검색결과 배열이 문제였다.
+
+Vue는 감시중인 배열의 변이 메소드(push, pop, shift, unshift, splice, sort, reverse)를 래핑하여 갱신을 트리거 한다.
+JavaScript의 제한으로 인해 Vue는 배열에 "
+        "wordCount": 216
     }
 </script>
 
@@ -335,20 +333,10 @@ git clone https://github.c"
         
 <nav id="article-nav">
     
-        <a href="/2019/07/07/mediaqueryDiary/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">newer</strong>
-        <p class="article-nav-title">
-        
-            미디어 쿼리 삽질 일기
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2019/06/30/hexo2/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2019/07/20/vue1/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">hexo README.md 추가하기</p>
+        <p class="article-nav-title">v-for 에서 이벤트 처리</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -536,7 +524,7 @@ git clone https://github.c"
     var disqus_shortname = 'tunas-room';
     
     
-    var disqus_url = 'http://NobleTuna.github.io/2019/07/02/git1/';
+    var disqus_url = 'http://NobleTuna.github.io/2019/07/23/vue2/';
     
     (function() {
     var dsq = document.createElement('script');
