@@ -3,8 +3,29 @@
 
 
     <url>
+        <loc>http://NobleTuna.github.io/tags/geth/</loc>
+        <lastmod>2019-08-29T14:45:10.186Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://NobleTuna.github.io/tags/ethereum/</loc>
+        <lastmod>2019-08-29T14:45:10.186Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://NobleTuna.github.io/tags/blockchain/</loc>
+        <lastmod>2019-08-29T14:45:10.186Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://NobleTuna.github.io/tags/vue-js/</loc>
-        <lastmod>2019-07-23T13:00:10.259Z</lastmod>
+        <lastmod>2019-07-23T13:08:11.235Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -33,20 +54,6 @@
     <url>
         <loc>http://NobleTuna.github.io/tags/hexo/</loc>
         <lastmod>2019-06-30T12:57:04.649Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://NobleTuna.github.io/tags/ethereum/</loc>
-        <lastmod>2019-06-29T09:47:33.780Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://NobleTuna.github.io/tags/blockchain/</loc>
-        <lastmod>2019-06-29T09:47:33.780Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
