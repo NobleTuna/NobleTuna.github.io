@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>http://NobleTuna.github.io/2019/07/20/vue1/</loc>
+        <lastmod>2019-12-01T00:27:38.807Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://NobleTuna.github.io/2019/07/23/vue2/</loc>
+        <lastmod>2019-12-01T00:27:06.282Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://NobleTuna.github.io/2019/11/12/blockchain-0x/</loc>
         <lastmod>2019-11-12T13:06:01.110Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -16,24 +32,8 @@
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/2019/07/23/vue2/</loc>
-        <lastmod>2019-11-12T13:00:25.216Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>http://NobleTuna.github.io/2019/08/29/geth-coinbase-rpc/</loc>
         <lastmod>2019-08-29T14:45:10.186Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://NobleTuna.github.io/2019/07/20/vue1/</loc>
-        <lastmod>2019-07-23T13:08:11.235Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
