@@ -2,13 +2,13 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>http://NobleTuna.github.io</loc>
+        <loc>https://blog.nobletuna.com</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/2021/01/26/virtualboxError/</loc>
+        <loc>https://blog.nobletuna.com/2021/01/26/virtualboxError/</loc>
         <lastmod>2021-01-26T12:18:23.841Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -16,7 +16,7 @@
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/2019/07/15/firebase1/</loc>
+        <loc>https://blog.nobletuna.com/2019/07/15/firebase1/</loc>
         <lastmod>2019-12-10T02:59:50.734Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -24,7 +24,7 @@
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/2019/11/12/blockchain-0x/</loc>
+        <loc>https://blog.nobletuna.com/2019/11/12/blockchain-0x/</loc>
         <lastmod>2019-12-10T02:59:14.877Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -32,7 +32,7 @@
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/2019/07/20/vue1/</loc>
+        <loc>https://blog.nobletuna.com/2019/07/20/vue1/</loc>
         <lastmod>2019-12-01T00:27:38.807Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -40,7 +40,7 @@
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/2019/07/23/vue2/</loc>
+        <loc>https://blog.nobletuna.com/2019/07/23/vue2/</loc>
         <lastmod>2019-12-01T00:27:06.282Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -48,7 +48,7 @@
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/2019/08/29/geth-coinbase-rpc/</loc>
+        <loc>https://blog.nobletuna.com/2019/08/29/geth-coinbase-rpc/</loc>
         <lastmod>2019-08-29T14:45:10.186Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -56,7 +56,7 @@
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/2019/07/07/mediaqueryDiary/</loc>
+        <loc>https://blog.nobletuna.com/2019/07/07/mediaqueryDiary/</loc>
         <lastmod>2019-07-07T22:44:26.260Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -64,7 +64,7 @@
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/2019/07/02/git1/</loc>
+        <loc>https://blog.nobletuna.com/2019/07/02/git1/</loc>
         <lastmod>2019-07-02T15:07:53.088Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -72,7 +72,7 @@
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/2019/06/30/hexo2/</loc>
+        <loc>https://blog.nobletuna.com/2019/06/30/hexo2/</loc>
         <lastmod>2019-06-30T12:57:04.649Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -80,7 +80,7 @@
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/2019/06/29/ethereum-domain/</loc>
+        <loc>https://blog.nobletuna.com/2019/06/29/ethereum-domain/</loc>
         <lastmod>2019-06-29T09:47:33.780Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -88,7 +88,7 @@
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/2019/06/29/blockchain-domain/</loc>
+        <loc>https://blog.nobletuna.com/2019/06/29/blockchain-domain/</loc>
         <lastmod>2019-06-29T05:31:30.923Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -96,7 +96,7 @@
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/2019/06/25/bigdata/</loc>
+        <loc>https://blog.nobletuna.com/2019/06/25/bigdata/</loc>
         <lastmod>2019-06-29T05:28:15.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -104,7 +104,7 @@
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/2019/06/23/hexo1/</loc>
+        <loc>https://blog.nobletuna.com/2019/06/23/hexo1/</loc>
         <lastmod>2019-06-23T22:16:37.143Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -112,7 +112,7 @@
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/2019/06/23/firstPost/</loc>
+        <loc>https://blog.nobletuna.com/2019/06/23/firstPost/</loc>
         <lastmod>2019-06-23T22:14:53.570Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

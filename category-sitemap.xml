@@ -2,62 +2,62 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>http://NobleTuna.github.io</loc>
+        <loc>https://blog.nobletuna.com</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/categories/Development/etc/</loc>
+        <loc>https://blog.nobletuna.com/categories/Development/etc/</loc>
         <lastmod>2021-01-26T12:18:23.841Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/categories/Development/</loc>
+        <loc>https://blog.nobletuna.com/categories/Development/</loc>
         <lastmod>2021-01-26T12:18:23.841Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/categories/Development/Firebase/</loc>
+        <loc>https://blog.nobletuna.com/categories/Development/Firebase/</loc>
         <lastmod>2019-12-10T02:59:50.734Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/categories/Development/BlockChain/</loc>
+        <loc>https://blog.nobletuna.com/categories/Development/BlockChain/</loc>
         <lastmod>2019-12-10T02:59:14.877Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/categories/Development/Vue-js/</loc>
+        <loc>https://blog.nobletuna.com/categories/Development/Vue-js/</loc>
         <lastmod>2019-12-01T00:27:38.807Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/categories/Diary/</loc>
+        <loc>https://blog.nobletuna.com/categories/Diary/</loc>
         <lastmod>2019-07-07T22:44:26.260Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/categories/Development/Hexo/</loc>
+        <loc>https://blog.nobletuna.com/categories/Development/Hexo/</loc>
         <lastmod>2019-06-30T12:57:04.649Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://NobleTuna.github.io/categories/Development/BigData/</loc>
+        <loc>https://blog.nobletuna.com/categories/Development/BigData/</loc>
         <lastmod>2019-06-29T05:28:15.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

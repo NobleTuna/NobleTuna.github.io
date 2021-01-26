@@ -5,9 +5,9 @@
   
   <link href="/feed.xml" rel="self"/>
   
-  <link href="http://NobleTuna.github.io/"/>
+  <link href="https://blog.nobletuna.com/"/>
   <updated>2021-01-26T12:18:23.841Z</updated>
-  <id>http://NobleTuna.github.io/</id>
+  <id>https://blog.nobletuna.com/</id>
   
   <author>
     <name>NobleTuna</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>VirtualBox 에러 (0x80004005)</title>
-    <link href="http://NobleTuna.github.io/2021/01/26/virtualboxError/"/>
-    <id>http://NobleTuna.github.io/2021/01/26/virtualboxError/</id>
+    <link href="https://blog.nobletuna.com/2021/01/26/virtualboxError/"/>
+    <id>https://blog.nobletuna.com/2021/01/26/virtualboxError/</id>
     <published>2021-01-26T11:40:26.000Z</published>
     <updated>2021-01-26T12:18:23.841Z</updated>
     
@@ -35,19 +35,19 @@
     
     </summary>
     
-      <category term="Development" scheme="http://NobleTuna.github.io/categories/Development/"/>
+      <category term="Development" scheme="https://blog.nobletuna.com/categories/Development/"/>
     
-      <category term="etc." scheme="http://NobleTuna.github.io/categories/Development/etc/"/>
+      <category term="etc." scheme="https://blog.nobletuna.com/categories/Development/etc/"/>
     
     
-      <category term="vm" scheme="http://NobleTuna.github.io/tags/vm/"/>
+      <category term="vm" scheme="https://blog.nobletuna.com/tags/vm/"/>
     
   </entry>
   
   <entry>
     <title>metamask 에서 private key 추출후 web3에서 사용시 잔액부족 오류</title>
-    <link href="http://NobleTuna.github.io/2019/11/12/blockchain-0x/"/>
-    <id>http://NobleTuna.github.io/2019/11/12/blockchain-0x/</id>
+    <link href="https://blog.nobletuna.com/2019/11/12/blockchain-0x/"/>
+    <id>https://blog.nobletuna.com/2019/11/12/blockchain-0x/</id>
     <published>2019-11-12T12:01:18.000Z</published>
     <updated>2019-12-10T02:59:14.877Z</updated>
     
@@ -64,19 +64,19 @@
     
     </summary>
     
-      <category term="Development" scheme="http://NobleTuna.github.io/categories/Development/"/>
+      <category term="Development" scheme="https://blog.nobletuna.com/categories/Development/"/>
     
-      <category term="BlockChain" scheme="http://NobleTuna.github.io/categories/Development/BlockChain/"/>
+      <category term="BlockChain" scheme="https://blog.nobletuna.com/categories/Development/BlockChain/"/>
     
     
-      <category term="blockchain" scheme="http://NobleTuna.github.io/tags/blockchain/"/>
+      <category term="blockchain" scheme="https://blog.nobletuna.com/tags/blockchain/"/>
     
   </entry>
   
   <entry>
     <title>coinbase가 자동으로 바뀌는 문제</title>
-    <link href="http://NobleTuna.github.io/2019/08/29/geth-coinbase-rpc/"/>
-    <id>http://NobleTuna.github.io/2019/08/29/geth-coinbase-rpc/</id>
+    <link href="https://blog.nobletuna.com/2019/08/29/geth-coinbase-rpc/"/>
+    <id>https://blog.nobletuna.com/2019/08/29/geth-coinbase-rpc/</id>
     <published>2019-08-29T13:58:56.000Z</published>
     <updated>2019-08-29T14:45:10.186Z</updated>
     
@@ -93,23 +93,23 @@
     
     </summary>
     
-      <category term="Development" scheme="http://NobleTuna.github.io/categories/Development/"/>
+      <category term="Development" scheme="https://blog.nobletuna.com/categories/Development/"/>
     
-      <category term="BlockChain" scheme="http://NobleTuna.github.io/categories/Development/BlockChain/"/>
+      <category term="BlockChain" scheme="https://blog.nobletuna.com/categories/Development/BlockChain/"/>
     
     
-      <category term="blockchain" scheme="http://NobleTuna.github.io/tags/blockchain/"/>
+      <category term="blockchain" scheme="https://blog.nobletuna.com/tags/blockchain/"/>
     
-      <category term="ethereum" scheme="http://NobleTuna.github.io/tags/ethereum/"/>
+      <category term="ethereum" scheme="https://blog.nobletuna.com/tags/ethereum/"/>
     
-      <category term="geth" scheme="http://NobleTuna.github.io/tags/geth/"/>
+      <category term="geth" scheme="https://blog.nobletuna.com/tags/geth/"/>
     
   </entry>
   
   <entry>
     <title>Vue.js 배열 데이터 변경</title>
-    <link href="http://NobleTuna.github.io/2019/07/23/vue2/"/>
-    <id>http://NobleTuna.github.io/2019/07/23/vue2/</id>
+    <link href="https://blog.nobletuna.com/2019/07/23/vue2/"/>
+    <id>https://blog.nobletuna.com/2019/07/23/vue2/</id>
     <published>2019-07-23T11:36:06.000Z</published>
     <updated>2019-12-01T00:27:06.282Z</updated>
     
@@ -125,19 +125,19 @@
     
     </summary>
     
-      <category term="Development" scheme="http://NobleTuna.github.io/categories/Development/"/>
+      <category term="Development" scheme="https://blog.nobletuna.com/categories/Development/"/>
     
-      <category term="Vue.js" scheme="http://NobleTuna.github.io/categories/Development/Vue-js/"/>
+      <category term="Vue.js" scheme="https://blog.nobletuna.com/categories/Development/Vue-js/"/>
     
     
-      <category term="vue.js" scheme="http://NobleTuna.github.io/tags/vue-js/"/>
+      <category term="vue.js" scheme="https://blog.nobletuna.com/tags/vue-js/"/>
     
   </entry>
   
   <entry>
     <title>v-for 에서 이벤트 처리</title>
-    <link href="http://NobleTuna.github.io/2019/07/20/vue1/"/>
-    <id>http://NobleTuna.github.io/2019/07/20/vue1/</id>
+    <link href="https://blog.nobletuna.com/2019/07/20/vue1/"/>
+    <id>https://blog.nobletuna.com/2019/07/20/vue1/</id>
     <published>2019-07-20T03:46:29.000Z</published>
     <updated>2019-12-01T00:27:38.807Z</updated>
     
@@ -154,19 +154,19 @@
     
     </summary>
     
-      <category term="Development" scheme="http://NobleTuna.github.io/categories/Development/"/>
+      <category term="Development" scheme="https://blog.nobletuna.com/categories/Development/"/>
     
-      <category term="Vue.js" scheme="http://NobleTuna.github.io/categories/Development/Vue-js/"/>
+      <category term="Vue.js" scheme="https://blog.nobletuna.com/categories/Development/Vue-js/"/>
     
     
-      <category term="vue.js" scheme="http://NobleTuna.github.io/tags/vue-js/"/>
+      <category term="vue.js" scheme="https://blog.nobletuna.com/tags/vue-js/"/>
     
   </entry>
   
   <entry>
     <title>Firebase &#39;auth/account-exists-with-different-credential&#39; 에러 처리</title>
-    <link href="http://NobleTuna.github.io/2019/07/15/firebase1/"/>
-    <id>http://NobleTuna.github.io/2019/07/15/firebase1/</id>
+    <link href="https://blog.nobletuna.com/2019/07/15/firebase1/"/>
+    <id>https://blog.nobletuna.com/2019/07/15/firebase1/</id>
     <published>2019-07-15T11:35:58.000Z</published>
     <updated>2019-12-10T02:59:50.734Z</updated>
     
@@ -182,19 +182,19 @@
     
     </summary>
     
-      <category term="Development" scheme="http://NobleTuna.github.io/categories/Development/"/>
+      <category term="Development" scheme="https://blog.nobletuna.com/categories/Development/"/>
     
-      <category term="Firebase" scheme="http://NobleTuna.github.io/categories/Development/Firebase/"/>
+      <category term="Firebase" scheme="https://blog.nobletuna.com/categories/Development/Firebase/"/>
     
     
-      <category term="firebase" scheme="http://NobleTuna.github.io/tags/firebase/"/>
+      <category term="firebase" scheme="https://blog.nobletuna.com/tags/firebase/"/>
     
   </entry>
   
   <entry>
     <title>미디어 쿼리 삽질 일기</title>
-    <link href="http://NobleTuna.github.io/2019/07/07/mediaqueryDiary/"/>
-    <id>http://NobleTuna.github.io/2019/07/07/mediaqueryDiary/</id>
+    <link href="https://blog.nobletuna.com/2019/07/07/mediaqueryDiary/"/>
+    <id>https://blog.nobletuna.com/2019/07/07/mediaqueryDiary/</id>
     <published>2019-07-07T06:55:00.000Z</published>
     <updated>2019-07-07T22:44:26.260Z</updated>
     
@@ -210,19 +210,19 @@
     
     </summary>
     
-      <category term="Diary" scheme="http://NobleTuna.github.io/categories/Diary/"/>
+      <category term="Diary" scheme="https://blog.nobletuna.com/categories/Diary/"/>
     
     
-      <category term="잡담" scheme="http://NobleTuna.github.io/tags/%EC%9E%A1%EB%8B%B4/"/>
+      <category term="잡담" scheme="https://blog.nobletuna.com/tags/%EC%9E%A1%EB%8B%B4/"/>
     
-      <category term="vue.js" scheme="http://NobleTuna.github.io/tags/vue-js/"/>
+      <category term="vue.js" scheme="https://blog.nobletuna.com/tags/vue-js/"/>
     
   </entry>
   
   <entry>
     <title>Git 원격 저장소 여러개 연결하기</title>
-    <link href="http://NobleTuna.github.io/2019/07/02/git1/"/>
-    <id>http://NobleTuna.github.io/2019/07/02/git1/</id>
+    <link href="https://blog.nobletuna.com/2019/07/02/git1/"/>
+    <id>https://blog.nobletuna.com/2019/07/02/git1/</id>
     <published>2019-07-02T12:32:29.000Z</published>
     <updated>2019-07-02T15:07:53.088Z</updated>
     
@@ -238,19 +238,19 @@
     
     </summary>
     
-      <category term="Development" scheme="http://NobleTuna.github.io/categories/Development/"/>
+      <category term="Development" scheme="https://blog.nobletuna.com/categories/Development/"/>
     
-      <category term="etc." scheme="http://NobleTuna.github.io/categories/Development/etc/"/>
+      <category term="etc." scheme="https://blog.nobletuna.com/categories/Development/etc/"/>
     
     
-      <category term="git" scheme="http://NobleTuna.github.io/tags/git/"/>
+      <category term="git" scheme="https://blog.nobletuna.com/tags/git/"/>
     
   </entry>
   
   <entry>
     <title>hexo README.md 추가하기</title>
-    <link href="http://NobleTuna.github.io/2019/06/30/hexo2/"/>
-    <id>http://NobleTuna.github.io/2019/06/30/hexo2/</id>
+    <link href="https://blog.nobletuna.com/2019/06/30/hexo2/"/>
+    <id>https://blog.nobletuna.com/2019/06/30/hexo2/</id>
     <published>2019-06-30T10:29:38.000Z</published>
     <updated>2019-06-30T12:57:04.649Z</updated>
     
@@ -266,19 +266,19 @@
     
     </summary>
     
-      <category term="Development" scheme="http://NobleTuna.github.io/categories/Development/"/>
+      <category term="Development" scheme="https://blog.nobletuna.com/categories/Development/"/>
     
-      <category term="Hexo" scheme="http://NobleTuna.github.io/categories/Development/Hexo/"/>
+      <category term="Hexo" scheme="https://blog.nobletuna.com/categories/Development/Hexo/"/>
     
     
-      <category term="hexo" scheme="http://NobleTuna.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="https://blog.nobletuna.com/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>이더리움 도메인 공부</title>
-    <link href="http://NobleTuna.github.io/2019/06/29/ethereum-domain/"/>
-    <id>http://NobleTuna.github.io/2019/06/29/ethereum-domain/</id>
+    <link href="https://blog.nobletuna.com/2019/06/29/ethereum-domain/"/>
+    <id>https://blog.nobletuna.com/2019/06/29/ethereum-domain/</id>
     <published>2019-06-29T08:53:37.000Z</published>
     <updated>2019-06-29T09:47:33.780Z</updated>
     
@@ -297,21 +297,21 @@
     
     </summary>
     
-      <category term="Development" scheme="http://NobleTuna.github.io/categories/Development/"/>
+      <category term="Development" scheme="https://blog.nobletuna.com/categories/Development/"/>
     
-      <category term="BlockChain" scheme="http://NobleTuna.github.io/categories/Development/BlockChain/"/>
+      <category term="BlockChain" scheme="https://blog.nobletuna.com/categories/Development/BlockChain/"/>
     
     
-      <category term="blockchain" scheme="http://NobleTuna.github.io/tags/blockchain/"/>
+      <category term="blockchain" scheme="https://blog.nobletuna.com/tags/blockchain/"/>
     
-      <category term="ethereum" scheme="http://NobleTuna.github.io/tags/ethereum/"/>
+      <category term="ethereum" scheme="https://blog.nobletuna.com/tags/ethereum/"/>
     
   </entry>
   
   <entry>
     <title>블록체인 도메인 공부</title>
-    <link href="http://NobleTuna.github.io/2019/06/29/blockchain-domain/"/>
-    <id>http://NobleTuna.github.io/2019/06/29/blockchain-domain/</id>
+    <link href="https://blog.nobletuna.com/2019/06/29/blockchain-domain/"/>
+    <id>https://blog.nobletuna.com/2019/06/29/blockchain-domain/</id>
     <published>2019-06-29T04:42:31.000Z</published>
     <updated>2019-06-29T05:31:30.923Z</updated>
     
@@ -330,19 +330,19 @@
     
     </summary>
     
-      <category term="Development" scheme="http://NobleTuna.github.io/categories/Development/"/>
+      <category term="Development" scheme="https://blog.nobletuna.com/categories/Development/"/>
     
-      <category term="BlockChain" scheme="http://NobleTuna.github.io/categories/Development/BlockChain/"/>
+      <category term="BlockChain" scheme="https://blog.nobletuna.com/categories/Development/BlockChain/"/>
     
     
-      <category term="blockchain" scheme="http://NobleTuna.github.io/tags/blockchain/"/>
+      <category term="blockchain" scheme="https://blog.nobletuna.com/tags/blockchain/"/>
     
   </entry>
   
   <entry>
     <title>빅데이터 도메인 공부</title>
-    <link href="http://NobleTuna.github.io/2019/06/25/bigdata/"/>
-    <id>http://NobleTuna.github.io/2019/06/25/bigdata/</id>
+    <link href="https://blog.nobletuna.com/2019/06/25/bigdata/"/>
+    <id>https://blog.nobletuna.com/2019/06/25/bigdata/</id>
     <published>2019-06-24T22:09:31.000Z</published>
     <updated>2019-06-29T05:28:15.970Z</updated>
     
@@ -358,21 +358,21 @@
     
     </summary>
     
-      <category term="Development" scheme="http://NobleTuna.github.io/categories/Development/"/>
+      <category term="Development" scheme="https://blog.nobletuna.com/categories/Development/"/>
     
-      <category term="BigData" scheme="http://NobleTuna.github.io/categories/Development/BigData/"/>
+      <category term="BigData" scheme="https://blog.nobletuna.com/categories/Development/BigData/"/>
     
     
-      <category term="bigdata" scheme="http://NobleTuna.github.io/tags/bigdata/"/>
+      <category term="bigdata" scheme="https://blog.nobletuna.com/tags/bigdata/"/>
     
-      <category term="clustering" scheme="http://NobleTuna.github.io/tags/clustering/"/>
+      <category term="clustering" scheme="https://blog.nobletuna.com/tags/clustering/"/>
     
   </entry>
   
   <entry>
     <title>Hexo 명령어 기록</title>
-    <link href="http://NobleTuna.github.io/2019/06/23/hexo1/"/>
-    <id>http://NobleTuna.github.io/2019/06/23/hexo1/</id>
+    <link href="https://blog.nobletuna.com/2019/06/23/hexo1/"/>
+    <id>https://blog.nobletuna.com/2019/06/23/hexo1/</id>
     <published>2019-06-23T14:05:56.000Z</published>
     <updated>2019-06-23T22:16:37.143Z</updated>
     
@@ -388,19 +388,19 @@
     
     </summary>
     
-      <category term="Development" scheme="http://NobleTuna.github.io/categories/Development/"/>
+      <category term="Development" scheme="https://blog.nobletuna.com/categories/Development/"/>
     
-      <category term="Hexo" scheme="http://NobleTuna.github.io/categories/Development/Hexo/"/>
+      <category term="Hexo" scheme="https://blog.nobletuna.com/categories/Development/Hexo/"/>
     
     
-      <category term="hexo" scheme="http://NobleTuna.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="https://blog.nobletuna.com/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>첫 포스팅</title>
-    <link href="http://NobleTuna.github.io/2019/06/23/firstPost/"/>
-    <id>http://NobleTuna.github.io/2019/06/23/firstPost/</id>
+    <link href="https://blog.nobletuna.com/2019/06/23/firstPost/"/>
+    <id>https://blog.nobletuna.com/2019/06/23/firstPost/</id>
     <published>2019-06-23T13:48:39.000Z</published>
     <updated>2019-06-23T22:14:53.570Z</updated>
     
@@ -419,10 +419,10 @@
     
     </summary>
     
-      <category term="Diary" scheme="http://NobleTuna.github.io/categories/Diary/"/>
+      <category term="Diary" scheme="https://blog.nobletuna.com/categories/Diary/"/>
     
     
-      <category term="잡담" scheme="http://NobleTuna.github.io/tags/%EC%9E%A1%EB%8B%B4/"/>
+      <category term="잡담" scheme="https://blog.nobletuna.com/tags/%EC%9E%A1%EB%8B%B4/"/>
     
   </entry>
   
