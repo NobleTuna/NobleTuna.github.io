@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="http://NobleTuna.github.io/"/>
-  <updated>2019-12-10T02:59:14.877Z</updated>
+  <updated>2021-01-26T12:18:23.841Z</updated>
   <id>http://NobleTuna.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VirtualBox 에러 (0x80004005)</title>
+    <link href="http://NobleTuna.github.io/2021/01/26/virtualboxError/"/>
+    <id>http://NobleTuna.github.io/2021/01/26/virtualboxError/</id>
+    <published>2021-01-26T11:40:26.000Z</published>
+    <updated>2021-01-26T12:18:23.841Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/image/gangdong_gwangjingyo.jpg" alt="2021-01-23 광진교 _ 한강이 건조하게 얼어붙었다."></p><p>미뤄뒀던 토이프로젝트 시작하려고 예~전에 설치해둔 VirtualBox를 켜서 vm을 실행시키니 다음과 같은 에러가 발생했다.</p><p><em>the virtual machine ‘ubuntu01’ has terminated unexpectedly during startup with exit code 1 (0x1)<br>E_FAIL (0x80004005)</em></p><p>구글링해보니 재설치를 하라, 하위버전을 설치해보라 여러 해결책이 나왔지만 재설치를 해도, 버전을 낮춰도 계속 같은 에러가 발생했다.</p><p>삽질하다 재설치를 해도 어딘가에 기존 설정이 남아있는 느낌이 강하게 들었다.</p><p>다시 삭제하고 찾아보니 <code>C:\Users\계정\.VirtualBox</code> 에 네트워크 설정등으로 보이는 파일들이 잔류해있었다.</p><p>.VirtualBox 폴더를 지우고 다시 최신버전으로 설치해보니 잘 되었다.</p><p>이상한데서 힘뺐다..</p><p>시작이 반이랬다. 오늘은 VM설치해서 만족한다.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/image/gangdong_gwangjingyo.jpg&quot; alt=&quot;2021-01-23 광진교 _ 한강이 건조하게 얼어붙었다.&quot;&gt;&lt;/p&gt;
+&lt;p&gt;미뤄뒀던 토이프로젝트 시작하려고 예~전에 설치해둔 VirtualBox를 켜서 vm을 
+      
+    
+    </summary>
+    
+      <category term="Development" scheme="http://NobleTuna.github.io/categories/Development/"/>
+    
+      <category term="etc." scheme="http://NobleTuna.github.io/categories/Development/etc/"/>
+    
+    
+      <category term="vm" scheme="http://NobleTuna.github.io/tags/vm/"/>
+    
+  </entry>
   
   <entry>
     <title>metamask 에서 private key 추출후 web3에서 사용시 잔액부족 오류</title>
